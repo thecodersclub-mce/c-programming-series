@@ -23,6 +23,7 @@
     text-align: center;
     margin-bottom: 70px; /* Space before footer */
 }
+
 /* Main Tab Navigation (Week 1, Week 2, etc.) */
 .main-tab-nav {
     display: flex;
@@ -746,7 +747,7 @@ pre code {
 
     <div class="blue-container">
         <div class="left-aligned">
-            <a href="https://mce-madurai.ac.in/" target="_blank">
+            <a href="index.html">
                 <img src="MCE_tab.png" alt="Logo" class="favicon-logo">
             </a>
             <div class="titles">
@@ -762,7 +763,7 @@ pre code {
         <button class="b-nav-button" onclick="window.location.href='finalquiz.html';">Mindmash</button>
         <button class="b-nav-button" onclick="window.location.href='leaderboard.html';">Leaderboard</button>
         <button class="b-nav-button" onclick="window.location.href='feedback.html';">Feedback</button>
-</div>
+    </div>
 
     <div class="content-container-wrapper">
         <div class="main-tab-nav">
@@ -772,16 +773,12 @@ pre code {
             <button class="tab-button" onclick="showWeek('week4', this)">Week 4</button>
             <button class="tab-button" onclick="showWeek('week5', this)">Week 5</button>
             <button class="tab-button" onclick="showWeek('week6', this)">Week 6</button>
-            <button class="tab-button" onclick="showWeek('week7', this)">Week 7</button>
-            <button class="tab-button" onclick="showWeek('week8', this)">Week 8</button>
-            <button class="tab-button" onclick="showWeek('week9', this)">Week 9</button>
-            <button class="tab-button" onclick="showWeek('week10', this)">Week 10</button>
-            <button class="tab-button" onclick="showWeek('week11', this)">Mindmash</button>
+            <button class="tab-button" onclick="showWeek('week10', this)">Mindmash</button>
         </div>
 
         <div id="week1" class="week-content">
     <p style="text-align: left; font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #00408f;">
-        Content for Week 1 - Basics and Syntax
+        Content for Week 1 - Introduction to DSA & Time Complexity
     </p>
     <div class="nested-tab-nav">
         <button class="tab-button" onclick="showDay('monday-content-week1', this, 'week1')">Monday</button>
@@ -793,194 +790,309 @@ pre code {
     </div>
 
     <div id="monday-content-week1" class="day-content day-section">
-        <h2>Monday Maverick</h2>
-        <div class="content-block">
-            <h3>What Are Header Files?</h3>
-            <ul>
-                <li>They contain function declarations, macros, constants, and data type definitions.</li>
-                <li>Included in source files using the #include directive to share code across multiple files.</li>
-                <li>Facilitate modularity, code reuse, and separation of interface from implementation.</li>
-            </ul>
-        </div>
-    </div>
+<h2>Monday Maverick</h2>
+<div class="content-block">
+<h3> What are Data Structures and Algorithms (DSA)?</h3>
+<p><strong>Data Structures (DS)</strong></p>
+<p>Data structures are special ways of organizing and storing data in computers so that we can perform operations on them efficiently.</p>
+<h3>Examples:</h3>
+<ul>
+<li>Arrays</li>
+<li>Linked Lists</li>
+<li>Stacks & Queues</li>
+<li>Trees (like BST, AVL)</li>
+<li>Graphs</li>
+<li>Hash Tables</li>
+</ul>
+</div>
+</div>
 
     <div id="tuesday-content-week1" class="day-content day-section">
-        <h2>Techie Tuesday</h2>
-        <div class="content-block">
-            <h3>Variables:</h3>
-            <p>Variables are named locations in memory that are used to hold a value that may be modified by the program.</p>
-            <p>The <strong>syntax</strong> for declaring a variable is:</p>
-            <pre><code>Data_type variableName;</code></pre>
-            <h3>Valid Examples:</h3>
-            <pre><code>int age = 21;
-float salary = 4564.50;
-int marks;
-int acc_type;
-char ch = 'y';
-char name[20] = "apollo";</code></pre>
-            <h3>Invalid Examples:</h3>
-            <pre><code>int 5marks;
-int @host;
-int acc no$;</code></pre>
-            <h3>Rules for framing a variable:</h3>
-            <ul>
-                <li>The first character in the variable name must be an alphabet.</li>
-                <li>Alphabets can be followed by a number of digits or underscores _.</li>
-                <li>No commas or blank spaces are allowed within a variable name.</li>
-                <li>No special characters other than underscore (_) can be used in a variable name.</li>
-                <li>The variable name should not be a keyword.</li>
-                <li>Variable names are case sensitive.</li>
-                <li>It should not be of length more than 31 characters.</li>
-            </ul>
-        </div>
+<h2>Techie Tuesday</h2>
+<div class="content-block">
+<h3>DSA: Power Up Your Code!</h3>
+<p>Think of DSA (Data Structures & Algorithms) as your coding toolbox.</p>
+<p>Data Structures = How you arrange and store data</p>
+<p>Algorithms = How you think and solve problems step-by-step</p>
+<p>But here’s the twist:</p>
+<ol>
+  <li>Anyone can write code.</li>
+  <li>DSA makes it smart, fast, and clean.</li></ol>
+<p>Learn DSA to:</p>
+      <ol><li>Crack coding rounds</li>
+      <li>Build efficient apps</li>
+      <li>Win hackathons</li>
+      <li>Boost logical thinking</li>
+    </ol>
+  </li>
+<p>It’s not just theory — DSA is real-world coding power!</p>
+<p>“Code is the language, DSA is the logic behind it.”</p>
+</div>
+</div>
+
+
+<div id="wednesday-content-week1" class="day-content day-section">
+    <h2>Syntax Snapshot Wednesday</h2>
+    <div class="content-block">
+        <h3>Algorithm Analysis: Time & Space Complexity</h3>
+        <p>Understanding how efficient an algorithm is can make or break your code — especially in  competitive coding and real-world apps.</p>
+        <p><strong>Time Complexity</strong><br>Measures how the execution time of an algorithm grows with input size n.</p>
+        <h4>Common Notations:</h4>
+        <ul>
+            <li><strong>O(1)</strong> → Constant time (super fast)</li>
+            <li><strong>O(log n)</strong> → Logarithmic (e.g., Binary Search)</li>
+            <li><strong>O(n)</strong> → Linear (e.g., Linear Search)</li>
+            <li><strong>O(n log n)</strong> → Log-linear (e.g., Merge Sort)</li>
+            <li><strong>O(n²)</strong> → Quadratic (e.g., Bubble Sort)</li>
+        </ul>
+        <p><strong>Think:</strong> How many steps does my code take as input grows?</p>
+        <p><strong>Pro Tip:</strong> Always aim for the lowest complexity possible for large datasets.</p>
+        <p><strong>Space Complexity:</strong> Tracks how much extra memory an algorithm uses as input grows.</p>
+        <h4>Examples:</h4>
+        <ul>
+            <li>A function with a few variables = O(1)</li>
+            <li>Recursion with depth n = O(n)</li>
+        </ul>
+        <p><strong>Always balance:</strong>
+            <ul><li>Time vs Space</li><li>Readability vs Optimization</li></ul>
     </div>
-
-    <div id="wednesday-content-week1" class="day-content day-section">
-        <h2>Syntax Snapshots Wednesday</h2>
-        <div class="content-block">
-            <h3>Basic Syntax of a C Program:</h3>
-            <pre><code>
-#include &lt;stdio.h&gt; // Preprocessor directive
-
-// main function - entry point of the program
-int main() {
-    // Print output to the screen
-    printf("Hello, World!\\n");
-
-    return 0; // Exit the program
-}</code></pre>
-<h3>Output:</h3>
-<code>Hello, World!</code>
-            <h3>Explanation of Each Part:</h3>
-            <ol>
-                <li>Every C program must have a main() function.</li>
-                <li>Statements must end with a semicolon ;</li>
-                <li>C is case-sensitive.</li>
-                <li>Code is typically written in .c files and compiled using tools like gcc.</li>
-            </ol>
-        </div>
-    </div>
+</div>
 
     <div id="thursday-content-week1" class="day-content day-section">
-        <h2>Te Ta Thursday</h2>
-        <div class="content-block">
-            <pre><code>#include &lt;stdio.h&gt;
-#define ADD(a, b) ((a) + (b))
-int main() { printf("%d\\n", ADD(5, 7)); return 0; }</code></pre>
-            <h3>Output:</h3>
-            <code>12</code>
-            <h3>Explanation:</h3>
-            <ol>
-                <li>#define ADD(a, b) ((a) + (b))
-                This line defines a macro named ADD that takes two arguments, a and b. The macro expands to the expression ((a) + (b)), which calculates the sum of a and b.
-                The parentheses around a and b are used to ensure that the macro works correctly even if the arguments are expressions themselves.<br>
-                </li>
-                <li>printf("%d\n", ADD(5, 7));
-                Here, the ADD macro is used to calculate the sum of 5 and 7. The macro expands to ((5) + (7)), which evaluates to 12. The result is then passed to printf(), which prints the value to the console.</li>
-            </ol>
-            <h3>How it works:</h3>
-            <ol>
-                <li>The preprocessor expands the ADD macro to ((5) + (7))</li>
-                <li>The compiler evaluates the expression ((5) + (7)) to 12.</li>
-                <li>The printf() function prints the result, 12, to the console.</li>
-            </ol>
-            <p>
-                Using macros like ADD can be useful for simple calculations, but be cautious when using complex macros, as they can lead to unexpected behavior.
-            </p>
+    <h2>Te Ta Thursday</h2>
+    <div class="content-block">
+        <h3>Big O Notation (Big O) in DSA – Simple Explanation with Examples</h3>
+        <p>Big O Notation is a way to describe the performance or complexity of an algorithm, especially in terms of time or space (memory) as the input size n grows.</p>
+        <h3> Why is it important?</h3>
+        <ul>
+            <li>It helps you compare algorithms.</li>
+            <li>It predicts how the algorithm will scale.</li>
+            <li>It shows the worst-case scenario.</li>
+        </ul>
+        <h3>Common Big O Notations:</h3>
+        
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Notation</th>
+                        <th>Name</th>
+                        <th>Example Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>O(1)</td>
+                        <td>Constant Time</td>
+                        <td>Accessing an array element: arr[3]</td>
+                    </tr>
+                    <tr>
+                        <td>O(log n)</td>
+                        <td>Logarithmic Time</td>
+                        <td>Binary Search</td>
+                    </tr>
+                    <tr>
+                        <td>O(n)</td>
+                        <td>Linear Time</td>
+                        <td>Loop through an array once</td>
+                    </tr>
+                    <tr>
+                        <td>O(n log n)</td>
+                        <td>Linearithmic Time</td>
+                        <td>Merge Sort, Quick Sort (avg. case)</td>
+                    </tr>
+                    <tr>
+                        <td>O(n²)</td>
+                        <td>Quadratic Time</td>
+                        <td>Nested loops (like Bubble Sort)</td>
+                    </tr>
+                    <tr>
+                        <td>O(2ⁿ)</td>
+                        <td>Exponential Time</td>
+                        <td>Solving Towers of Hanoi, Recursion-heavy</td>
+                    </tr>
+                    <tr>
+                        <td>O(n!)</td>
+                        <td>Factorial Time</td>
+                        <td>Brute-force permutations (like Travelling Salesman)</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        
+        <h3>Simple Examples:</h3>
+        <h4> Example 1: O(1) – Constant Time</h4>
+        <div class="code-block">
+            <pre><code>def get_first_element(arr):
+    return arr[0]</code></pre>
+        </div>
+        <p>No matter how big arr is, it just returns the first element.</p>
+        <h4>Example 2: O(n) – Linear Time</h4>
+        <div class="code-block">
+            <pre><code>def print_all_elements(arr):
+    for item in arr:
+        print(item)</code></pre>
+        </div>
+        <p>As the array size grows, the number of operations grows linearly.</p>
+        <h4>Example 3: O(n²) – Quadratic Time</h4>
+        <div class="code-block">
+            <pre><code>def print_pairs(arr):
+for i in arr:
+    for j in arr:
+      print(i, j)</code></pre>
+        </div>
+        <p>Two nested loops: if arr has 5 items, total prints = 5×5 = 25</p>
+        <h4>Example 4: O(log n) – Logarithmic Time (Binary Search)</h4>
+        <div class="code-block">
+            <pre><code>def binary_search(arr, target):
+low, high = 0, len(arr) - 1
+while low <= high:
+    mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1</code></pre>
+        </div>
+        <p>With each step, the search space is halved.</p>
     </div>
-
+</div>
     <div id="friday-content-week1" class="day-content day-section">
-        <h2>Function Friday</h2>
-        <div class="content-block">
-            <h3>Functions:</h3>
-            <p>
-                Functions are blocks of code designed to perform specific tasks. They enhance modularity, code reuse, and readability.
-            </p>
-            <h3>Types of Functions:</h3>
-            <ol>
-                <li>Library Functions: Predefined in header files (printf(),scanf(),strlen(), etc.).</li>
-                <li>User-Defined Functions: Created by the programmer for specific tasks.</li>
-                <li>Recursive Functions: Functions that call themselves.</li>
-            </ol>
-            <h3>Basic Function Syntax:</h3>
+    <h2>Function Friday</h2>
+    <div class="content-block">
+        <h3>Analyzing Time Complexity of Basic C Programs:</h3>
+        <p>Time complexity is a measure of how long an algorithm takes to complete, usually expressed as a function of the input size. Let's analyze the time complexity of a basic C program.</p>
+        <h3>Example Program: Finding the Maximum Element in an Array</h3>
+        <div class="code-block">
             <pre><code>#include &lt;stdio.h&gt;
-// Function declaration
-int add(int a, int b);
+int findMax(int arr[], int n) {
+    int max = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+
 int main() {
-    int result = add(5, 7);
-    printf("Sum: %d\\n", result);
+    int arr[] = {4, 2, 9, 6, 5, 1};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    printf("Maximum element: %d\n", findMax(arr, n));
+    return 0;
+}</code></pre>
+        </div>
+        <h3>Time Complexity Analysis:</h3>
+        <p>The <strong>findMax</strong> function iterates through the array once, comparing each element with the current maximum. The number of operations (comparisons and assignments) grows linearly with the size of the input array <strong>n</strong>.</p>
+        <ul>
+            <li><strong>Best-case scenario:</strong> The maximum element is at the first position, but the algorithm still iterates through the entire array, resulting in a time complexity of O(n)</li>
+            <li><strong>Worst-case scenario:</strong> The maximum element is at the last position, and the algorithm still iterates through the entire array, resulting in a time complexity of O(n)</li>
+            <li><strong>Average-case scenario:</strong> The maximum element can be anywhere in the array, but the algorithm still iterates through the entire array, resulting in a time complexity of O(n)</li>
+        </ul>
+        <p>Therefore, the time complexity of the <strong>findMax</strong> function is O(n), where n is the size of the input array.</p>
+        <h3>Explanation:</h3>
+        <ul>
+            <li>The time complexity is O(n) because the algorithm performs a constant amount of work for each element in the input array.</li>
+            <li>The loop iterates <strong>n-1</strong> times, and each iteration performs a constant number of operations (one comparison and potentially one assignment).</li>
+            <li>The time complexity is linear because the running time grows directly proportional to the size of the input array.</li>
+        </ul>
+        <h3>Examples:</h3>
+        <h4>Example 1: Small Array</h4>
+        <p>Input: <pre><code>arr[] = {3, 1, 4, 2}</code></pre><br>
+        Output: <code>Maximum element: 4</code></p>
+        <ul>
+            <li>Number of iterations: 3 (n-1 = 4-1 = 3)</li>
+            <li>Time complexity: O(n) = O(4)</li>
+        </ul>
+        <h4>Example 2: Large Array</h4>
+        <p>Input: <pre><code>arr[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}</code></pre><br>
+        Output: <code>Maximum element: 100</code></p>
+        <ul>
+            <li>Number of iterations: 9 (n-1 = 10-1 = 9)</li>
+            <li>Time complexity: O(n) = O(10)</li>
+        </ul>
+        <h4>Example 3: Array with Maximum Element at First Position</h4>
+        <p>Input: <pre><code>arr[] = {100, 20, 30, 40, 50, 60, 70, 80, 90, 10}</code></pre><br>
+        Output: <code>Maximum element: 100</code></p>
+        <ul>
+            <li>Number of iterations: 9 (n-1 = 10-1 = 9)</li>
+            <li>Time complexity: O(n) = O(10)</li>
+        </ul>
+        <h4>Example 4: Array with Maximum Element at Last Position</h4>
+        <p>Input: <pre><code>arr[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}</code></pre><br>
+        Output: <code>Maximum element: 100</code></p>
+        <ul>
+            <li>Number of iterations: 9 (n-1 = 10-1 = 9)</li>
+            <li>Time complexity: O(n) = O(10)</li>
+        </ul>
+    </div>
+</div>
+<div id="saturday-content-week1" class="day-content day-section">
+    <h2>Brain Cache</h2>
+    <div class="content-block">
+        <h3>1. The "Undo" feature in a text editor is usually implemented using:</h3>
+        <ol>
+            <li>Queue</li>
+            <li><strong>Stack</strong></li>
+            <li>Array</li>
+            <li>Hash Table</li>
+        </ol>
+        <h3>2. Why is learning DSA important for developers?</h3>
+        <ol>
+            <li>To make code look colorful</li>
+            <li><strong>To build efficient and optimized solutions</strong></li>
+            <li>To avoid writing comments in code</li>
+            <li>To learn more programming languages</li>
+        </ol>
+        <h3>3. Which of the following statements about time and space complexity is always true?</h3>
+        <ol>
+            <li>If an algorithm has better time complexity, it will always have better space complexity too.</li>
+            <li>An algorithm with O(1) space complexity never uses any memory beyond input.</li>
+            <li><strong>It is possible for two different algorithms solving the same problem to have the same time complexity but different space complexities.</strong></li>
+            <li>Space complexity only depends on the size of the input, not on the operations performed.</li>
+        </ol>
+        <h3>4. A programmer needs to choose between two algorithms. Algorithm A has a time complexity of O(n log n), and Algorithm B has a time complexity of O(n^2). As the input size (n) increases, which of the following statements is true regarding their efficiency?</h3>
+        <ol>
+            <li>Algorithm B is more efficient because a quadratic function grows slower than a linearithmic function.</li>
+            <li>Both algorithms have similar efficiency, so the choice between them does not matter.</li>
+            <li><strong>Algorithm A is more efficient because its number of operations grows much slower than Algorithm B's as n increases.</strong></li>
+            <li>Algorithm B is more efficient because a larger exponent indicates a faster algorithm.</li>
+        </ol>
+        <h3>5. In the findMax function, if the size of the input array is 10, how many iterations will the loop perform?</h3>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int findMax(int arr[], int n) {
+    int max = arr[0];
+    for (int i = 1; i &lt; n; i++) {
+        if (arr[i] &gt; max) {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+
+int main() {
+    int arr[] = {4, 2, 9, 6, 5, 1};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    printf("Maximum element: %d\n", findMax(arr, n));
     return 0;
 }
-// Function definition
-int add(int a, int b) {
-    return a + b;
-}</code></pre>
-<h3>Output:</h3>
-<code>Sum: 12</code>
-            <h3>Function Components Explained:</h3>
-            <ul>
-                <li>Function Declaration: Specifies return type, function name, and parameters.</li>
-                <li>Function Definition: Contains the actual implementation.</li>
-                <li>Function Call: Invokes the function with arguments.</li>
-            </ul>
-            <h3>Function Advantages:</h3>
-            <ul>
-                <li>Encourages code reusability.</li>
-                <li>Breaks problems into smaller manageable chunks.</li>
-                <li>Improves readability and maintainability.</li>
-            </ul>
-            <p><strong>Fun Fact:</strong> In C, functions must be declared before they are used, unless included in header files.</p>
-        </div>
+</code></pre>
+        <ol>
+            <li>8</li>
+            <li><strong>9</strong></li>
+            <li>10</li>
+            <li>11</li>
+        </ol>
     </div>
-    <div id="saturday-content-week1" class="day-content day-section">
-        <h2>Brain Cache</h2>
-        <div class="content-block">
-            <h3>1. How can a C programmer separate function declarations and avoid multiple inclusions?</h3>
-            <ol>
-                <li>Use one .c file for everything.</li>
-                <li><strong>Use .h files with include guards or #pragma once.</strong></li>
-                <li>Only use standard headers.</li>
-                <li>Avoid using headers completely.</li>
-            </ol>
-            <h3>2. Which of the following variable names are valid in C?</h3>
-            <ol>
-                <li>int 2cool4school;</li>
-                <li><strong>float _temperature;</strong></li>
-                <li>char full name[50];</li>
-                <li><strong>double classAverage;</strong></li>
-                <li>int break;</li>
-            </ol>
-            <h3>3. What is required in every C program to serve as the entry point?</h3>
-            <ol>
-                <li><strong>main() function</strong></li>
-                <li>int main()</li>
-                <li>char full name[50];</li>
-                <li>void main()</li>
-                <li>Return type of main (int)</li>
-            </ol>
-            <h3>4. What does the #define directive do in C?</h3>
-            <ol>
-                <li>Declares a variable</li>
-                <li><strong>Defines a macro</strong></li>
-                <li>Includes a library</li>
-                <li>Defines a function</li>
-            </ol>
-            <h3>5. Which of the following scenarios best demonstrates the advantage of using functions in C?</h3>
-            <ol>
-                <li>Writing all logic inside main() without breaking it into smaller tasks.</li>
-                <li><strong>Using separate functions for repeated calculations to improve modularity.</strong></li>
-                <li>Avoiding function entirely and using global variables for efficiency</li>
-                <li>Copy-pasting code snippets multiple times instead of defining reusable functions.</li>
-            </ol>
-        </div>
-    </div>
+</div>
 </div>
 
 
 <div id="week2" class="week-content">
     <p style="text-align: left; font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #00408f;">
-        Content for Week 2 - Control Structures
+        Content for Week 2 - Arrays and Searching Algorithms
     </p>
     <div class="nested-tab-nav">
         <button class="tab-button" onclick="showDay('monday-content-week2', this, 'week2')">Monday</button>
@@ -994,338 +1106,52 @@ int add(int a, int b) {
     <div id="monday-content-week2" class="day-content day-section">
         <h2>Monday Maverick</h2>
         <div class="content-block">
-            <h3>Introduction to Control Structures:</h3>
-            <p>Control structures allow you to change the flow of program execution based on conditions.</p>
-        </div>
-
-        <div class="content-block">
-            <h3>Types:</h3>
-            <ul>
-                <li>Decision-making (conditional).</li>
-                <li>Looping (iterative).</li>
-                <li>Jumping (branching).</li>
-            </ul>
-        </div>
-
-        <div class="content-block">
-            <h3>Explanation:</h3>
-            <ul>
-                <li>Decision-Making Structures: Used to execute a block of code only if a condition is true.</li>
-                <li>Looping Structures: Used to repeat a block of code multiple times.</li>
-                <li>Jumping Statements: Used to alter the normal flow of a program.</li>
-            </ul>
+            <p>Content coming soon!</p>
         </div>
     </div>
 
     <div id="tuesday-content-week2" class="day-content day-section">
         <h2>Techie Tuesday</h2>
         <div class="content-block">
-            <h3>Conditional Statements in C:</h3>
-            <p>Conditional statements are used to make decisions in a program. Based on whether a condition is true or false, different blocks of code will be executed.</p>
-            <h3>Types:</h3>
-            <ol>
-                <li>if Statement</li>
-                <li>if...else Statement</li>
-                <li>else if Ladder</li>
-                <li>switch Statement</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>Detailed Explanation of Types:</h3>
-            <ol>
-                <li>
-                    <h4>if Statement:</h4>
-                    <p>Used when you want to execute a block of code only if a condition is true.</p>
-                    <h5>Syntax:</h5>
-                    <pre><code>if (condition) {
-    //code to execute if condition is true
-}</code></pre>
-                </li>
-                <li>
-                    <h4>if...else Statement:</h4>
-                    <p>Used when you want to choose between two blocks of code.</p>
-                    <h5>Syntax:</h5>
-                    <pre><code>if (condition) {
-    //code to execute if condition is true
-}
-else {
-    //code if false
-}</code></pre>
-                </li>
-                <li>
-                    <h4>else if Ladder:</h4>
-                    <p>Used when you have multiple conditions to check in sequence.</p>
-                    <h5>Syntax:</h5>
-                    <pre><code>if (condition) {
-    //code to execute if condition is true
-}
-else if (condition) {
-    //code
-}
-else if (condition n) {
-    //code
-}
-else {
-    //default code
-}</code></pre>
-                </li>
-                <li>
-                    <h4>switch Statement:</h4>
-                    <p>Used to replace multiple else if blocks when comparing a single variable against many values.</p>
-                    <h5>Syntax:</h5>
-                    <pre><code>switch (expression) {
-case value1:
-    //code
-    break;
-case value2:
-    //code
-    break;
-default:
-    //code
-    break;
-}</code></pre>
-                </li>
-            </ol>
+            <p>Content coming soon!</p>
         </div>
     </div>
 
     <div id="wednesday-content-week2" class="day-content day-section">
         <h2>Syntax Snapshots Wednesday</h2>
         <div class="content-block">
-            <h3>Syntax of if Statement in C:</h3>
-            <pre><code>if (condition) {
-    //Code to execute if condition is true
-}</code></pre>
-            <h3>Example C program using if:</h3>
-            <pre><code>#include &lt;stdio.h&gt;
-
-int main() {
-    int number;
-    printf("Enter an integer: ");
-    scanf("%d", &number);
-    if (number > 0) {
-        printf("%d is a positive number.\n", number);
-    }
-    return 0;
-}</code></pre>
-            <h3>Output:</h3>
-            <code>Enter a number:
-8
-The number is positive.</code>
+            <p>Content coming soon!</p>
         </div>
     </div>
 
     <div id="thursday-content-week2" class="day-content day-section">
         <h2>Te Ta Thursday</h2>
         <div class="content-block">
-            <ol>
-                <li>
-                    <h4>Switch Statement with Enumerations:</h4>
-                    Using switch statements with enumerations to handle different cases.
-                </li>
-                <pre><code>typedef enum {
-    RED,
-    GREEN,
-    BLUE
-} Color;
-
-void printColor(Color c) {
-    switch(c){
-        case RED:
-            printf("Red\n");
-            break;
-        //..
-    }
-}</code></pre>
-                <h3>Expected Output:</h3>
-                <code>Red</code>
-                <li>
-                    <h4>Nested Loops with Labels:</h4>
-                    Using labels to control nested loopexecution.
-                </li>
-                <pre><code>outer:
-for(int i = 0; i < 5; i++) {
-    for(int j = 0; j < 5; j++) {
-        if (i == 3) break outer;
-        printf("%d %d\n",i,j);
-    }
-}</code></pre>
-                <h3>Expected Output:</h3>
-                <code>0 0
-0 1
-0 2
-0 3
-0 4
-1 0
-1 1
-1 2
-1 3
-1 4
-2 0
-2 1
-2 2
-2 3
-2 4</code>
-
-                <li>
-                    <h4>Break and Continue Statements:</h4>
-                    Controlling loop execution with break and continue.
-                </li>
-                <pre><code>for ( int i = 0; i < 5; i++) {
-    if (i == 3)
-        continue; //Skips 3
-    if (i == 4)
-        break; //Stop at 4
-    printf("%d\n",i);
-}</code></pre>
-                <h3>Expected Output:</h3>
-                <code>0
-1
-2</code>
-                <li>
-                    <h4>if-else Statements with Conditional Operators:</h4>
-                    Simplifying if-else with conditional operators.
-                </li>
-                <pre><code>
-int x=5;
-int result = (x>10) ? 1 : 0; //result = 0
-printf("%d\n",result);
-                </code></pre>
-                <h3>Expected Output</h3>
-                <code>0</code>
-            </ol>
+            <p>Content coming soon!</p>
         </div>
     </div>
 
     <div id="friday-content-week2" class="day-content day-section">
         <h2>Function Friday</h2>
         <div class="content-block">
-            <h3>do...while Loop:</h3>
-            <p>
-                Executes a block of code at least once, and then continues to repeat the block as long as a specified condition remains true.
-            </p>
-            <h4>Syntax:</h4>
-            <pre><code>
-do {
-    // Code to execute
-} while (condition);
-            </code></pre>
-            <h3>Example:</h3>
-            <pre><code>
-#include &lt;stdio.h&gt;
-int main() {
-    int x = 5;
-    do {
-        printf("Value: %d\n",x); // Corrected printf format string
-        x--;
-    } while (x > 0);
-    return 0;
-}
-            </code></pre>
-            <h3>Output:</h3>
-            <code>Value: 5
-Value: 4
-Value: 3
-Value: 2
-Value: 1</code>
-            <h3>Simulating for-each Loop in C:</h3>
-            <p>
-                C doesn't have a direct for-each, but arrays can be traversed using a for loop.
-            </p>
-<h3>Example:</h3>
-            <pre><code>
-#include &lt;stdio.h&gt;
-int main() {
-int numbers[] = {10, 20, 30, 40};
-int size = sizeof(numbers) / sizeof(numbers[0]);
-for(int i = 0; i < size; i++) {
-printf("Value: %d\n", numbers[i]);
-}
-return 0;
-}
-            </code></pre>
-            <h3>Output:</h3>
-            <code>Value: 10
-Value: 20
-Value: 30
-Value: 40</code>
-            <h3>Code Explanation:</h3>
-            <ul>
-                <li>Defines an array numbers[]</li>
-                <li>Calculates the array size using sizeof(numbers) / sizeof(numbers[0])</li>
-                <li>Iterates through elements, printing each value dynamically</li>
-            </ul>
+            <p>Content coming soon!</p>
         </div>
     </div>
     <div id="saturday-content-week2" class="day-content day-section">
         <h2>Brain Cache</h2>
         <div class="content-block">
-            <h3>1.What does a control structure do in programming?</h3>
-            <ol>
-                <li>It stores data in memory.</li>
-                <li><strong>It defines the order in which instructions are executed.</strong></li>
-                <li>It displays output to the user.</li>
-                <li>It converts high-level code to machine code.</li>
-            </ol>
-            <h3>2. What will be printed when the following program is executed?</h3>
-            <pre><code>
-#include &lt;stdio.h&gt;
-int main() {
-    int a = 5, b = 10;
-
-    if (a < b)
-        if (a != 5)
-            printf("A is not five\n");
-        else
-            printf("A is five\n");
-    else
-        printf("A is not greater than B\n");
-
-    return 0;
-}
-            </code></pre>
-            <ol>
-                <li>A is not five.</li>
-                <li><strong>A is five.</strong></li>
-                <li>A is not greater than B.</li>
-                <li>Compilation Error</li>
-            </ol>
-            <h3>3. How can a C program use an if statement to check if a number entered by the user is positive?</h3>
-            <h5><strong>Sample code / the answer may differ according to your idea</strong></h5>
-            <pre><code>
-#include &lt;stdio.h&gt;
-int main() {
-    int number;
-    printf("Enter an integer: ");
-    scanf("%d", &number);
-    if (number > 0) {
-        printf("%d is a positive number.\n", number);
-    }
-    return 0;
-}
-            </code></pre>
-            <h3>4. What is the purpose of using enumerations with switch statements in C?</h3>
-            <ol>
-                <li>To simplify code readability.</li>
-                <li>To improve code performance.</li>
-                <li><strong>To handle different cases based on a specific value.</strong></li>
-                <li>To reduce memory usage.</li>
-            </ol>
-            <h3>5.Imagine you have a vending machine that requires a customer to press a button at least once to check if an item is available. If the item is available, they can continue pressing to get more items. Which loop structure in C works similarly to this vending machine process?</h3>
-            <ol>
-                <li>for loop.</li>
-                <li>while loop.</li>
-                <li><strong>do...while loop.</strong></li>
-                <li>switch statement.</li>
-            </ol>
+            <p>Week 2 Quiz coming soon!</p>
+            <!--<p>Quiz answers will be uploaded soon!</p>-->
+            <center><button onclick="window.location.href='https://thecodersclub-mce.github.io/dsa/quiz.html'">
+    Week 2 Quiz
+</button></center>
         </div>
     </div>
 </div>
 
         <div id="week3" class="week-content">
     <p style="text-align: left; font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #00408f;">
-        Content for Week 3 - Functions and Arrays Control Structure 
+        Content for Week 3 - Sorting Techniques 
     </p>
     <div class="nested-tab-nav">
         <button class="tab-button" onclick="showDay('monday-content-week3', this, 'week3')">Monday</button>
@@ -1339,338 +1165,52 @@ int main() {
     <div id="monday-content-week3" class="day-content day-section">
         <h2>Monday Maverick</h2>
         <div class="content-block">
-            <h3>What is a function?</h3>
-            <p>A function is a block of code that performs a specific task. It improves modularity and reusability.</p>
-        </div>
-
-        <div class="content-block">
-            <h3>Syntax:</h3>
-            <pre><code>return_type function_name(parameters) {
-    // code
-}</code></pre>
-        </div>
-
-        <div class="content-block">
-            <h3>Example:</h3>
-            <pre><code>#include &lt;stdio.h&gt;
-
-// Function declaration
-int add(int a, int b);
-
-int main() {
-    int sum = add(5, 10);  // Function call
-    printf("Sum is: %d", sum);
-    return 0;
-}
-
-// Function definition
-int add(int a, int b) {
-    return a + b;
-}</code></pre>
-        </div>
-        <div class="content-block">
-            <h3>Output:</h3>
-            <code>Sum is: 15</code>
+            <p>Content coming soon!</p>
         </div>
     </div>
 
     <div id="tuesday-content-week3" class="day-content day-section">
         <h2>Techie Tuesday</h2>
         <div class="content-block">
-            <h3>Arrays in C:</h3>
-            <p>An array in C is a collection of elements, all of the same type, stored in contiguous memory locations.</p>
-            <div class="content-block">
-                <h3>Syntax:</h3>
-                <pre><code>
-data_type array_name[size];
-// Example: int myArray[10];
-                </code></pre>
-                <p>Type: The data type of the array elements (e.g., int, float).<br>Size: The number of elements the array can store.</p>
-            </div>
-            <div class="content-block">
-                <h3>Example:</h3>
-                <pre><code>
-#include &lt;stdio.h&gt;
-int main() {
-    int arr[5] = {1, 2, 3, 4, 5};  // Declaration and initialization
-    printf("Element at index 2: %d\n", arr[2]);
-    return 0;
-}</code></pre>
-            </div>
-            <div class="content-block">
-                <h3>Output:</h3>
-                <code>Element at index 2: 3</code>
-            </div>
-<div class="content-block">
-                <h3>Control Structures for Arrays in C:</h3>
-                <p>Control structures like loops are used to traverse and manipulate arrays in C.</p>
-                <h3>Example with for loop:</h3>
-                <pre><code>#include &lt;stdio.h&gt;
-int main() {
-    int arr[5] = {1, 2, 3, 4, 5};    
-    // Loop through array and print each element
-    for (int i = 0; i < 5; i++) {
-        printf("Element at index %d: %d\n", i, arr[i]);
-    }
-    return 0;
-}
-                </code></pre>
-<p>This code prints all the elements of the array arr.</p>
-            </div>
-
- <div class="content-block">
-                <h3>Output:</h3>
-                <code>Element at index 0: 1
-Element at index 1: 2
-Element at index 2: 3
-Element at index 3: 4
-Element at index 4: 5</code>
-            </div>
+            <p>Content coming soon!</p>
         </div>
     </div>
 
     <div id="wednesday-content-week3" class="day-content day-section">
         <h2>Syntax Snapshots Wednesday</h2>
         <div class="content-block">
-            <h3>Let see about pointers in C program:</h3>
-            <p>A pointer is a variable that stores the address of another variable. Pointers are powerful tools that enable efficient memory access, dynamic memory management, and are essential in data structures like linked lists and trees.</p>
-        </div>
-        <div class="content-block">
-            <h3>Example program:</h3>
-            <pre><code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int a = 10;          // Declare an integer variable
-    int *ptr;            // Declare a pointer to int
-
-    ptr = &a;            // Store address of variable 'a' in pointer 'ptr'
-
-    // Print the value and address
-    printf("Value of a: %d\n", a);
-    printf("Address of a: %p\n", &a);
-    printf("Value stored in ptr (address of a): %p\n", ptr);
-    printf("Value pointed to by ptr (value of a): %d\n", *ptr);
-
-    return 0;
-}
-            </code></pre>
-        </div>
-        <div class="content-block">
-            <h3>Output:</h3>
-            <code>Value of a: 10
-Address of a: 0x7ffee0b01234  (This will be a hexadecimal address)
-Value stored in ptr (address of a): 0x7ffee0b01234 (This will be the same as Address of a)
-Value pointed to by ptr (value of a): 10</code>
+            <p>Content coming soon!</p>
         </div>
     </div>
 
     <div id="thursday-content-week3" class="day-content day-section">
         <h2>Te Ta Thursday</h2>
         <div class="content-block">
-            <h3>Passing Arrays to Functions:</h3>
-            <p>One lesser-known aspect is how arrays are passed to functions in C. When an array is passed to a function, it decays into a pointer to the first element. This means the function receives a pointer, not the entire array.</p>
-        </div>
-
-        <div class="content-block">
-            <h3>Example program:</h3>
-            <pre><code>#include &lt;stdio.h&gt;
-
-// Function to print array elements
-void printArray(int arr[], int size) {
-    for (int i = 0; i < size; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-}
-
-int main() {
-    int numbers[5] = {1, 2, 3, 4, 5};
-    printArray(numbers, 5);
-    return 0;
-}
-</code></pre>
-<p>In this example, arr in the printArray function is essentially a pointer to the first element of the numbers array. The size parameter is necessary because the function doesn't know the size of the array otherwise.</p>
-        </div>
-        <div class="content-block">
-            <h3>Output:</h3>
-            <code>1 2 3 4 5</code>
+            <p>Content coming soon!</p>
         </div>
     </div>
 
     <div id="friday-content-week3" class="day-content day-section">
         <h2>Function Friday</h2>
         <div class="content-block">
-            <h3>Function Pointers in C:</h3>
-            <p>A function pointer stores the address of a function and allows dynamic invocation.</p>
-            <h4>Syntax:</h4>
-            <pre><code>
-// Function pointer declaration
-void (*funcPtr)();
-
-// Assign function address to pointer
-funcPtr = &greet;
-
-// Call function using pointer
-funcPtr();
-
-            </code></pre>
-            <h3>Example:</h3>
-            <pre><code>
-#include &lt;stdio.h&gt;
-// Function to display a message
-void greet() {
-    printf("Hello, Function Pointers!\n");
-}
-int main() {
-    void (*funcPtr)(); // Declare function pointer
-    funcPtr = &greet;  // Assign function address
-    funcPtr();         // Call function using pointer
-    return 0;
-}
-
-            </code></pre>
-            <h3>Output:</h3>
-            <code>Hello, Function Pointers!</code>
-            <h3>Why use function pointers?</h3>
-            <ul>
-                <li>Enables callback functions in programs like sorting algorithms.</li>
-                <li>Used in event-driven programming and function abstraction.</li>
-            </ul>
-<h3>Deeper Dive:</h3>
-            <ul>
-                <li>Function pointers allow runtime function selection, making programs more flexible.</li>
-                <li>They are essential for implementing state machines, commonly used in embedded systems.</li>
-            </ul>
-<h3>Variable-Length Arrays (VLA):</h3>
-            <p>Unlike fixed-size arrays, VLAs allow defining arrays with dynamic sizes at runtime (supported in modern C versions).</p>
-
-<h3>Syntax:</h3>
-<pre><code>
-int n;
-scanf("%d", &n);  // Get array size from user
-int arr[n];       // Declare a variable-length array
-            </code></pre>
-<h3>Example:</h3>
-            <pre><code>
-int main() {
-    int n;
-    printf("Enter array size: ");
-    scanf("%d", &n);
-    int arr[n];  // Variable-length array
-    for (int i = 0; i < n; i++) {
-        arr[i] = i + 1;
-    }
-    printf("Array contents:\n");
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    return 0;
-}
-
-            </code></pre>
-            <h3>Expected Output:</h3>
-            <code>Enter array size: 5
-Array contents:
-1 2 3 4 5
-
----
-
-Enter array size: 3
-Array contents:
-1 2 3
-
----
-
-Enter array size: 10
-Array contents:
-1 2 3 4 5 6 7 8 9 10</code>
-            <h3>Why use VLAs?</h3>
-            <ul>
-                <li>Allows dynamic array sizing at runtime.</li>
-                <li>Useful when the required array size is unknown before execution.</li>
-            </ul>
-<h3>Deeper Dive:</h3>
-            <ul>
-                <li>Simpler Syntax Compared to malloc.</li>
-                <li>Eliminates the need for manual memory allocation & deallocation.</li>
-            </ul>
-<h3>When Should You Use VLAs?</h3>
-            <ul>
-                <li>When you need simple runtime array sizing for small arrays.</li>
-                <li>When writing temporary arrays that won’t persist beyond function scope</li>
-            </ul>
+            <p>Content coming soon!</p>
         </div>
     </div>
-<div id="saturday-content-week3" class="day-content day-section">
+    <div id="saturday-content-week3" class="day-content day-section">
         <h2>Brain Cache</h2>
         <div class="content-block">
-            <h3>1. Define what a "function" is in C programming, and explain how its use contributes to better code quality.</h3>
-            <h5><strong>Expected answer</strong></h5>
-<p>A function in C is a block of code that performs a specific task. It promotes modularity and code reuse, making programs easier to debug, read, and maintain by breaking complex problems into smaller parts.</p>
-            <h3>2. Which of the following statements about arrays in C is TRUE, considering pointer behavior, memory allocation, and function interactions?</h3>
-            <ol>
-                <li>The name of an array can be incremented like a pointer, because it points to the base address of the array.</li>
-                <li>When an array is passed to a function, the entire array is copied and operated on as a separate entity.</li>
-                <li>Arrays in C can have dynamic lengths declared using variables in standard C90.</li>
-                <li><strong>The expression *(arr + i) is equivalent to arr[i] in terms of accessing array elements.</strong></li>
-            </ol>
-            <h3>3. What concept is primarily demonstrated by the output of the following C program involving a variable and a pointer?</h3>
-            <pre><code>
-#include &lt;stdio.h&gt;
-int main() {
-    int a = 10; 
-    int *ptr;            
-    ptr = &a;           
-    printf("Value of a: %d\n", a);
-    printf("Address of a: %p\n", &a);
-    printf("Value stored in ptr (address of a): %p\n", ptr);
-    printf("Value pointed to by ptr (value of a): %d\n", *ptr);
-    return 0;
-}
-            </code></pre>
-<ol>
-                <li><strong>The program shows how to use a pointer to access the address and value of a variable.</strong></li>
-                <li>The program swaps two integers using pointers.</li>
-                <li>The program performs dynamic memory allocation using malloc.</li>
-                <li>The program uses arrays to store multiple integer values.</li>
-                <li>The program demonstrates pointer arithmetic with arrays.</li>
-            </ol>
-            <h3>4. Why is the size parameter typically necessary when an array is passed to a function in C, as shown in the printArray example?</h3>
-            <pre><code>
-#include &lt;stdio.h&gt;
-void printArray(int arr[], int size) {
-    for (int i = 0; i < size; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-}
-int main() {
-    int numbers[5] = {1, 2, 3, 4, 5};
-    printArray(numbers, 5);
-    return 0;
-}
-            </code></pre>
-<ol>
-                <li>The program shows how to use a pointer to access the address and value of a variable.</li>
-                <li>To ensure the array elements are passed by value instead of by reference.</li>
-                <li><strong>Because when an array decays to a pointer, the function loses information about its original size.</strong></li>
-                <li>To allow the function to modify the array's dimensions dynamically.</li>
-            </ol>
-            <h3>5. What is the primary advantage of using function pointers in C?</h3>
-            <ol>
-                <li>They allow defining arrays with dynamic sizes at runtime.</li>
-                <li><strong>They enable runtime function selection and dynamic invocation.</strong></li>
-                <li>They eliminate the need for manual memory allocation.</li>
-                <li>They are used to declare fixed-size arrays.</li>
-            </ol>
+            <p>Week 3 Quiz coming soon!</p>
+            <!--<p>Quiz answers will be uploaded soon!</p>-->
+            <center><button onclick="window.location.href='https://thecodersclub-mce.github.io/dsa/quiz.html'">
+    Week 3 Quiz
+</button></center>
         </div>
     </div>
 </div>
 
         <div id="week4" class="week-content">
     <p style="text-align: left; font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #00408f;">
-        Content for Week 4 - Pointers and Strings
+        Content for Week 4 - Linked Lists
     </p>
     <div class="nested-tab-nav">
         <button class="tab-button" onclick="showDay('monday-content-week4', this, 'week4')">Monday</button>
@@ -1681,351 +1221,50 @@ int main() {
         <button class="tab-button" onclick="showDay('saturday-content-week4', this, 'week4')">Saturday</button>
     </div>
 
+    
     <div id="monday-content-week4" class="day-content day-section">
         <h2>Monday Maverick</h2>
         <div class="content-block">
-            <h3>What is a Pointer?</h3>
-            <p>A pointer is a variable that stores the memory address of another variable.</p>
-        </div>
-
-        <div class="content-block">
-            <h3>Syntax:</h3>
-            <pre><code>
-data_type *pointer_name;
-            </code></pre>
-        </div>
-
-        <div class="content-block">
-            <h3>Examples:</h3>
-            <pre><code>
-int *ptr;        // pointer to an int
-float *fptr;     // pointer to a float
-char *cptr;      // pointer to a char
-double *dptr;    // pointer to a double          
-</code></pre>
-<p><strong>Note:</strong> Even though * is used in the declaration, the pointer itself just stores an address.</p>
-        </div>
-        <div class="content-block">
-            <h3>Example:</h3>
-            <pre><code>
-int a = 10;
-int *ptr = &a;   // ptr now holds the address of a
-        </code></pre>
+            <p>Content coming soon!</p>
         </div>
     </div>
 
     <div id="tuesday-content-week4" class="day-content day-section">
-    <h2>Techie Tuesday</h2>
-    <div class="content-block">
-        <h3>What is a String in C?</h3>
-        <p>A string is a sequence of characters terminated by a null character '\0'.
-In C, strings are represented as arrays of characters.
-Think of a string as a sentence or word stored in memory.
-</p>
+        <h2>Techie Tuesday</h2>
+        <div class="content-block">
+            <p>Content coming soon!</p>
+        </div>
     </div>
-    <div class="content-block">
-        <h3>Example:</h3>
-        <pre><code>#include &lt;stdio.h&gt;
-int main() {
-    char name[] = "Welcome";
-    printf("Hello, %s!\n", name);
-    return 0;
-}</code></pre> 
-</div>
-    <div class="content-block">
-        <h3>Output:</h3>
-        <code>Hello, Welcome!</code>
-        <p>"Welcome" is a string stored in a character array.</p>
-    </div>
-    <div class="content-block">
-        <h3>Pointers with Strings in C:</h3>
-        <p>A pointer to a string is a pointer that stores the address of the first character of the string.
-It’s a more memory-efficient and flexible way to handle strings than using character arrays.
-</p>
-    </div>
-    <div class="content-block">
-        <h3>Example:</h3>
-        <pre><code>#include &lt;stdio.h&gt;
-int main() {
-    char *greet = "Welcome!";
-    printf("%s\n", greet);
-    return 0;
-}</code></pre>  
-</div>
-    <div class="content-block">
-        <h3>Output:</h3>
-        <code>Welcome!</code>
-        <p><strong>Explanation:</strong></p>
-        <ul>
-            <li>char *greet ➡ Pointer to the string "Welcome!"</li>
-            <li>%s in printf prints the full string starting from the pointer.</li>
-        </ul>
-    </div>
-</div>
 
     <div id="wednesday-content-week4" class="day-content day-section">
         <h2>Syntax Snapshots Wednesday</h2>
         <div class="content-block">
-        <h3>C Program using String Function (strlen):</h3>
-    </div>
-    <div class="content-block">
-        <pre><code>
-#include &lt;stdio.h&gt;
-#include &lt;string.h&gt;
-int main() {
-    char str[100];
-    
-    printf("Enter a string: ");
-    gets(str);  // Note: gets() is unsafe, use fgets() in real programs
-
-    int length = strlen(str);  // Using string function
-
-    printf("Length of the string is: %d\n", length);
-    
-    return 0;
-}
-
-</code></pre>  
-</div>
-    <div class="content-block">
-        <h3>Output:</h3>
-        <code>Hello, Welcome!Enter a string: Hello
-Length of the string is: 5
-
----
-
-Enter a string: C Programming
-Length of the string is: 13
-
----
-
-Enter a string: 
-Length of the string is: 0</code>
-<p><strong>Explanation:</strong> strlen() is a string function that returns the length of the string.</p>
-    </div>
-
-    <div class="content-block">
-        <h3>C Program using String Pointer:</h3>
-    </div>
-    <div class="content-block">
-        <pre><code>#include &lt;stdio.h&gt;
-int main() {
-    char str[] = "Hello, World!";
-    char *ptr = str;
-
-    printf("String using pointer:\n");
-    while (*ptr != '\0') {
-        printf("%c", *ptr);
-        ptr++;
-    }
-
-    return 0;
-}</code></pre>  </div>
-    <div class="content-block">
-        <h3>Output:</h3>
-        <code>String using pointer:
-Hello, World!</code>
-        <p><strong>Explanation:</strong></p>
-        <ul>
-            <li>char *ptr = str; assigns a pointer to the beginning of the string.
-</li>
-            <li>while (*ptr != '\0') traverses the string using the pointer.</li>
-        </ul>
-    </div>
+            <p>Content coming soon!</p>
+        </div>
     </div>
 
     <div id="thursday-content-week4" class="day-content day-section">
         <h2>Te Ta Thursday</h2>
         <div class="content-block">
-        <h3>Pointer Arithmetic with Strings:</h3>
-        <p>You can use pointer arithmetic to traverse strings.</p>
-    </div>
-    <div class="content-block">
-<h3>Example:</h3>
-        <pre><code>
-char str[] = "Hello";
-char *ptr = str;
-while (*ptr != '\0') {
-    printf("%c", *ptr);
-    ptr++;
-}
-</code></pre>  
-</div>
-    <div class="content-block">
-        <h3>Expected Output:</h3>
-        <code>Hello</code>
-<p>This concept is powerful, but it requires careful handling to avoid buffer overflows and other issues.</p>
-    </div>
-
-    <div class="content-block">
-        <h3>String Literal vs. Character Array:</h3>
-<p>In C, string literals and character arrays are not exactly the same.</p>
-    </div>
-    <div class="content-block">
-<h3>Example:</h3>
-        <pre><code>
-char *str1 = "Hello"; // string literal (read-only)
-char str2[] = "Hello"; // character array (modifiable)
-
-// str1[0] = 'h'; // would cause a segmentation fault
-str2[0] = 'h'; // okay
-</code></pre>  </div>
-    <div class="content-block">
-        <h3>What may be in the output:</h3>
-        <code>str1: Hello
-str2: hello</code>
-        <p>This distinction is important to understand when working with strings in C.</p>
-    </div>
+            <p>Content coming soon!</p>
+        </div>
     </div>
 
     <div id="friday-content-week4" class="day-content day-section">
         <h2>Function Friday</h2>
         <div class="content-block">
-        <h3>Finding a Character in a String - using Pointers:</h3>
-        <p>This program shows how to write a simple function to search for a character in a string using pointers.</p>
+            <p>Content coming soon!</p>
+        </div>
     </div>
-    <div class="content-block">
-<h3>Example:</h3>
-        <pre><code>
-#include &lt;stdio.h&gt;
-int findChar(char *text, char target) {
-    int index = 0;
-    while (*text != '\0') {
-        if (*text == target) {
-            return index; // Found it!
-        }
-        text++;
-        index++;
-    }
-    return -1; // Not found
-}
-
-int main() {
-    char myWord[] = "apple";
-    char charToFind = 'p';
-
-    int position = findChar(myWord, charToFind);
-
-    if (position != -1) {
-        printf("'%c' is at index %d\n", charToFind, position);
-    } else {
-        printf("'%c' not found\n", charToFind);
-    }
-    return 0;
-}
-
-</code></pre>  
-</div>
-    <div class="content-block">
-        <h3>Output:</h3>
-        <code>'p' is at index 1</code>
-    </div>
-
-    <div class="content-block">
-        <h3>Finding a Character in a String - using strchr():</h3>
-    </div>
-    <div class="content-block">
-<p>This program demonstrates using the built-in strchr() function for the same task, showing its simplicity.</p>
-<h3>Example:</h3>
-        <pre><code>
-#include &lt;stdio.h&gt;
-#include &lt;string.h&gt;
-int main() {
-    char mySentence[] = "orange";
-    char searchFor = 'a';
-
-    // strchr returns a pointer to the char if found, or NULL
-    char *found = strchr(mySentence, searchFor);
-
-    if (found != NULL) {
-        // Calculate index by subtracting pointers
-        int index = found - mySentence;
-        printf("'%c' is at index %d\n", searchFor, index);
-    } else {
-        printf("'%c' not found\n", searchFor);
-    }
-    return 0;
-}
-</code></pre>  </div>
-    <div class="content-block">
-        <h3>Output:</h3>
-        <code>'a' is at index 3</code>
-    </div>
-    </div>
-<div id="saturday-content-week4" class="day-content day-section">
+    <div id="saturday-content-week4" class="day-content day-section">
         <h2>Brain Cache</h2>
         <div class="content-block">
-            <h3>1. What is the output of the following code?</h3>
-            <pre><code>int a = 10;
-int *p = &a;
-printf("%d", *p);</code></pre>
-<ol>
-                <li><strong>10</strong></li>
-                <li>Address of a.</li>
-                <li>Garbage value.</li>
-                <li>Compile-time error.</li>
-            </ol>
-
-            <h3>2. What will be the output of the following C code?</h3>
-            <pre><code>#include &lt;stdio.h&gt;
-int main() {
-    char str1[] = "Hello";
-    char *str2 = "Hello";
-
-    str1[0] = 'H';
-    str2[0] = 'H';
-
-    printf("str1: %s\n", str1);
-    printf("str2: %s\n", str2);
-
-    return 0;
-}</code></pre>
-<ol>
-                <li>str1: Hello<br>
-str2: Hello</li>
-                <li><strong>str1: Hello<br>
-Segmentation Fault</strong></li>
-                <li>str1: Hello<br>
-str2: hello</li>
-                <li>Compile-time error.</li>
-            </ol>
-            <h3>3. In this C program, what technique is used to display the string on screen?</h3>
-            <pre><code>#include &lt;stdio.h&gt;
-int main() {
-    char str[] = "Hello, World!";
-    char *ptr = str;
-
-    printf("String using pointer:\n");
-    while (*ptr != '\0') {
-        printf("%c", *ptr);
-        ptr++;
-    }
-
-    return 0;
-}</code></pre>
-            <ol>
-            <li><strong>It prints the string using a string pointer and while loop.</strong></li>
-            <li>It uses strlen() function to display the string.</li>
-            <li>It copies the string using strcpy() before printing.</li>
-            <li>It sorts the string characters alphabetically before printing.</li>
-            </ol>
-
-            <h3>4. What happens when an array is passed to a function in C?</h3>
-<ol>
-                <li>The entire array is copied and passed to the function.</li>
-                <li><strong>The array decays into a pointer to the first element.</strong></li>
-                <li>To allow the function to modify the array's dimensions dynamically.</li>
-                <li>The function receives a reference to the original array.</li>
-                <li>The array is not passed at all, and the function uses a default value.</li>
-            </ol>
-            <h3>5. Given <strong>char word[] = "grape";</strong> and <strong>char target = 'e';</strong> what index would <strong>findChar(word, target)</strong> return?</h3>
-            <ol>
-                <li><strong>4</strong></li>
-                <li>3</li>
-                <li>0</li>
-                <li>-1</li>
-            </ol></div>   
-
+            <p>Week 4 Quiz coming soon!</p>
+            <!--<p>Quiz answers will be uploaded soon!</p>-->
+            <center><button onclick="window.location.href='https://thecodersclub-mce.github.io/dsa/quiz.html'">
+    Week 4 Quiz
+</button></center>
+        </div>
     </div>
 </div>
 
@@ -2037,7 +1276,7 @@ int main() {
             </p> -->
 
 <p style="text-align: left; font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #00408f;">
-        Content for Week 5 - Structures and File Handling
+        Content for Week 5 - Stacks and Queues
     </p>
     <div class="nested-tab-nav">
         <button class="tab-button" onclick="showDay('monday-content-week5', this, 'week5')">Monday</button>
@@ -2048,489 +1287,56 @@ int main() {
         <button class="tab-button" onclick="showDay('saturday-content-week5', this, 'week5')">Saturday</button>
     </div>
 
+
     <div id="monday-content-week5" class="day-content day-section">
         <h2>Monday Maverick</h2>
         <div class="content-block">
-            <h3>Structures in C:</h3>
-            <p>A structure in C is a user-defined data type that allows you to combine variables of different types under one name.</p>
+            <p>Content coming soon!</p>
         </div>
+    </div>
+
+    <div id="tuesday-content-week5" class="day-content day-section">
+        <h2>Techie Tuesday</h2>
         <div class="content-block">
-            <h3>Syntax:</h3>
-            <pre><code>struct Student {
-    int id;
-    char name[50];
-    float marks;
-};</code></pre>
-        </div>
-
-        <div class="content-block">
-            <h3>How to Declare and Use:</h3>
-            <pre><code>struct Student s1;
-
-s1.id = 101;
-strcpy(s1.name, "John");
-s1.marks = 89.5;
-
-printf("%d %s %.2f", s1.id, s1.name, s1.marks);</code></pre>
-        </div>
-        <div class="content-block">
-            <h3>Expected Output:</h3>
-            <code>101 John 89.50</code>
-     </div>
-    </div>
-<div id="tuesday-content-week5" class="day-content day-section">
-    <h2>Techie Tuesday</h2>
-    <div class="content-block">
-        <h3>File Handling in C Programming:</h3>
-        <p>File handling in C allows you to create, open, read, write, and close files — making your programs more powerful by storing and retrieving data from files instead of just using memory!</p>
-    </div>
-    <div class="content-block">
-        <h3>Header File Required:</h3>
-        <pre><code>#include &lt;stdio.h&gt;</code></pre>
-        <p>This must be included to use file functions like fopen(), fclose(), fprintf(), fscanf(), etc.</p>
-    </div>
-
-    <div class="content-block">
-        <h3>How to Declare and Use:</h3>
-        <div class="table-responsive">
-            <table class="content-block-table">
-                <thead>
-                    <tr>
-                        <th>Operation</th>
-                        <th>Function</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Operation">Create/Open</td>
-                        <td data-label="Function"><code>fopen()</code></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Operation">Close</td>
-                        <td data-label="Function"><code>fclose()</code></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Operation">Read</td>
-                        <td data-label="Function"><code>fscanf(), fgets()</code></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Operation">Write</td>
-                        <td data-label="Function"><code>fprintf(), fputs()</code></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Operation">Move cursor</td>
-                        <td data-label="Function"><code>fseek(), ftell()</code></td>
-                    </tr>
-                </tbody>
-            </table>
+            <p>Content coming soon!</p>
         </div>
     </div>
-    <div class="content-block">
-        <h3>File Modes in fopen()</h3>
-        <div class="table-responsive">
-            <table class="content-block-table">
-                <thead>
-                    <tr>
-                        <th>Mode</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Mode">"r"</td>
-                        <td data-label="Description">Read</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Mode">"w"</td>
-                        <td data-label="Description">Write (overwrite)</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Mode">"a"</td>
-                        <td data-label="Description">Append (add at end)</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Mode">"r+"</td>
-                        <td data-label="Description">Read & Write</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Mode">"w+"</td>
-                        <td data-label="Description">Write & Read (overwrite)</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Mode">"a+"</td>
-                        <td data-label="Description">Append & Read</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="content-block">
-        <h3>Always Remember:</h3>
-        <ul>
-            <li>Check if the file opened successfully (if (fp == NULL))</li>
-            <li>Always fclose(fp) to avoid memory leaks.</li>
-        </ul>
-    </div></div>
 
-<div id="wednesday-content-week5" class="day-content day-section">
+    <div id="wednesday-content-week5" class="day-content day-section">
         <h2>Syntax Snapshots Wednesday</h2>
-                <div class="content-block">
-        <!-- <p style="text-align: center; font-style: italic; color: #555;">CONTENT COMING SOON!</p> -->
-            <h3>C Program for File Handling (Write + Read):</h3>
-            <pre><code>#include &lt;stdio.h&gt;
-int main() {
-    FILE *fptr;
-    char data[100];
+        <div class="content-block">
+            <p>Content coming soon!</p>
+        </div>
+    </div>
 
-    // Writing to the file
-    fptr = fopen("myfile.txt", "w"); // open in write mode
-    if (fptr == NULL) {
-        printf("Error opening file!\n");
-        return 1;
-    }
-
-    printf("Enter some text to write into the file: ");
-    fgets(data, sizeof(data), stdin);
-    fprintf(fptr, "%s", data);
-    fclose(fptr);
-    printf("Data written to file successfully.\n");
-
-    // Reading from the file
-    fptr = fopen("myfile.txt", "r"); // open in read mode
-    if (fptr == NULL) {
-        printf("Error opening file!\n");
-        return 1;
-    }
-
-    printf("Reading from the file:\n");
-    while (fgets(data, sizeof(data), fptr) != NULL) {
-        printf("%s", data);
-    }
-    fclose(fptr);
-
-    return 0;
-}</code></pre>
-</div>
-<div class="content-block">
-<h3>Output:</h3>
-<code>Enter some text to write into the file: Hello, C programming!
-Data written to file successfully.
-Reading from the file:
-Hello, C programming!</code></div>
-<div class="content-block">
-<h3>Content in myfile.txt :</h3>
-<code>Hello, C programming!</code>
-</div>
-</div>
-<div id="thursday-content-week5" class="day-content day-section">
+    <div id="thursday-content-week5" class="day-content day-section">
         <h2>Te Ta Thursday</h2>
         <div class="content-block">
-        <h3>Structures in C:</h3>
-        <p>Imagine you have a collection of data that you want to store together, like a person's details. You can create a struct to hold this data:</p>
-        <pre><code>struct Person {
-    int age;
-    char name[20];
-};</code></pre>
-</div>
-<div class="content-block">
-<h3>Some cool things about structures:</h3>
-<ul>
-<li><strong>Structure Padding:</strong> When you define a structure, the compiler might add some extra space (padding) between members to ensure they're aligned properly in memory.<br>
-<p>For example:</p>
-<pre><code>struct Example {
-    char a; // 1 byte
-    int b;  // 4 bytes
-}; // The total size might be 8 bytes due to padding</code></pre></li>
-<li><strong>Bit Fields:</strong> You can specify the number of bits for a structure member, which is useful when working with limited memory:<br>
-<pre><code>struct PackedData {
-    unsigned int flag: 1;
-    unsigned int mode: 2;
-};</code></pre></li>
-<li><strong>Nested Structures:</strong> You can define a structure within another structure:<br>
-<pre><code>struct Address {
-    char street[20];
-    char city[10];
-};
+            <p>Content coming soon!</p>
+        </div>
+    </div>
 
-struct Person {
-    int age;
-    char name[20];
-    struct Address address;
-};</code></pre></li>
-</ul>
-</div>
-<div class="content-block">
-<h3>File Handling in C:</h3>
-<p>File handling allows you to read and write data to files. Here are some key functions:</p>
-<ul>
-  <li><strong>fopen():</strong> Opens a file.</li>
-  <li><strong>fread()</strong> and <strong>fwrite():</strong> Read and write data to files.</li>
-  <li><strong>fclose():</strong> Closes a file.</li>
-</ul>
-</div>
-<div class="content-block">
-<h3>Example:</h3>
-<pre><code>FILE *file = fopen("example.txt", "w");
-if (file != NULL) {
-    fprintf(file, "Hello, world!");
-    fclose(file);
-}</code></pre></div>
-<div class="content-block">
-<h3>Expected Output in example.txt :<h3>
-<code>Hello, world!</code></div>
-
-</div>
-<div id="friday-content-week5" class="day-content day-section">
+    <div id="friday-content-week5" class="day-content day-section">
         <h2>Function Friday</h2>
         <div class="content-block">
-        <!--  -->
-        <h3>Store and Retrieve Structured Data Using File Handling:</h3>
-        <p>This program helps you save a student's info—like their name, ID, and marks—into a file. Then it opens the file and shows you what was saved, kind of like writing something down and reading it later.</p>
+            <p>Content coming soon!</p>
         </div>
-        <div class="content-block">
-        <h3>Example:</h3>
-        <pre><code>#include &lt;stdio.h&gt;
-struct Student {
-    int id;
-    char name[50];
-    float marks;
-};
-
-// Function to get user input and write to file
-void writeStudentToFile() {
-    struct Student s;
-    
-    printf("Enter Student ID: ");
-    scanf("%d", &s.id);
-    
-    printf("Enter Student Name: ");
-    scanf(" %[^\n]", s.name);  // reads string with spaces
-    
-    printf("Enter Marks: ");
-    scanf("%f", &s.marks);
-
-    FILE *fp = fopen("student.txt", "w");
-    if (fp == NULL) {
-        printf("Error opening file!\n");
-        return;
-    }
-
-    fprintf(fp, "%d\n%s\n%.2f\n", s.id, s.name, s.marks);
-    fclose(fp);
-    printf("Student data saved successfully.\n\n");
-}
-
-// Function to read from file and display
-void readStudentFromFile() {
-    struct Student s;
-    FILE *fp = fopen("student.txt", "r");
-
-    if (fp == NULL) {
-        printf("Error opening file!\n");
-        return;
-    }
-
-    fscanf(fp, "%d\n", &s.id);
-    fgets(s.name, sizeof(s.name), fp);
-    fscanf(fp, "%f", &s.marks);
-
-    // Remove trailing newline from name (if any)
-    if (s.name[strlen(s.name) - 1] == '\n') {
-        s.name[strlen(s.name) - 1] = '\0';
-    }
-
-    fclose(fp);
-
-    printf("Student Data from File:\n");
-    printf("ID: %d\n", s.id);
-    printf("Name: %s\n", s.name);
-    printf("Marks: %.2f\n", s.marks);
-}
-
-int main() {
-    writeStudentToFile();
-    readStudentFromFile();
-    return 0;
-}</code></pre></div>
-    <div class="content-block">
-    <h3>Output:</h3>
-<code>Enter Student ID: 105
-Enter Student Name: Dave
-Enter Marks: 92.5
-Student data saved successfully.
-
-Student Data from File:
-ID: 105
-Name: Dave
-Marks: 92.50</code>
-</div>
-</div>
-<div id="saturday-content-week5" class="day-content day-section">
+    </div>
+    <div id="saturday-content-week5" class="day-content day-section">
         <h2>Brain Cache</h2>
         <div class="content-block">
-                <h3>1. Which of the following statements about C structures is true?</h3>
-                <ol>
-                    <li>A structure can only contain variables of the same data type.</li>
-                    <li><strong>The `struct` keyword is used to define a new data type.</strong></li>
-                    <li>Members of a structure are accessed using the `->` operator for all cases.</li>
-                    <li>Structures cannot be passed as arguments to functions.</li>
-                </ol>
-            </div>
-
-            <div class="content-block">
-                <h3>2. What will be the output of the following code snippet?</h3>
-                <pre class="code-block"><code>#include &lt;stdio.h&gt;
-
-int main() {
-    FILE *fp;
-    fp = fopen("data.txt", "r");
-    if (fp == NULL) {
-        printf("Can't open file \n");
-    } else {
-        fprintf(fp, "Hello, world! ");
-        printf("Written to file \n");
-        fclose(fp);
-    }
-    return 0;
-}</code></pre>
-                <ol>
-                    <li>Written to file</li>
-                    <li><strong>Can't open file</strong></li>
-                    <li>File gets created and "Hello, world! " is written into it</li>
-                    <li>Compile-time error</li>
-                </ol>
-            </div>
-
-            <div class="content-block">
-                <h3>3. What might happen when the following C program is executed?</h3>
-                <pre class="code-block"><code>#include &lt;stdio.h&gt;
-
-int main() {
-    FILE *fptr;
-    char data[100];
-
-    fptr = fopen("myfile.txt", "w"); // open in write mode
-    if (fptr == NULL) {
-        printf("Error opening file!\n");
-        return 1;
-    }
-
-    printf("Enter some text to write into the file: ");
-    fgets(data, sizeof(data), stdin);
-    fprintf(fptr, "%s", data);
-    fclose(fptr);
-    printf("Data written to file successfully.\n");
-
-    fptr = fopen("myfile.txt", "r"); // open in read mode
-    if (fptr == NULL) {
-        printf("Error opening file!\n");
-        return 1;
-    }
-
-    printf("Reading from the file:\n");
-    while (fgets(data, sizeof(data), fptr) != NULL) {
-        printf("%s", data);
-    }
-    fclose(fptr);
-
-    return 0;
-}</code></pre>
-                <ol>
-                    <li><strong>The program writes user input to a file and reads it back successfully.</strong></li>
-                    <li>The program writes data to the file but fails to read it.</li>
-                    <li>The program crashes immediately due to a syntax error.</li>
-                    <li>The file is opened in append mode, so it keeps adding new data every time.</li>
-                </ol>
-            </div>
-
-            <div class="content-block">
-                <h3>4. What is the primary reason for structure padding in C?</h3>
-                <ol>
-                    <li>To improve code readability</li>
-                    <li>To reduce memory usage</li>
-                    <li><strong>To ensure proper alignment of structure members in memory</strong></li>
-                    <li>To increase execution speed</li>
-                </ol>
-            </div>
-
-            <div class="content-block">
-                <h3>5. What is the purpose of the `fprintf` function in `writeStudentToFile()`?</h3>
-                <pre class="code-block"><code>#include &lt;stdio.h&gt;
-#include &lt;string.h&gt;
-
-struct Student {
-    int id;
-    char name[50];
-    float marks;
-};
-
-void writeStudentToFile() {
-    struct Student s;
-
-    printf("Enter Student ID: ");
-    scanf("%d", &s.id);
-
-    printf("Enter Student Name: ");
-    scanf(" %[^\n]", s.name);
-
-    printf("Enter Marks: ");
-    scanf("%f", &s.marks);
-
-    FILE *fp = fopen("student.txt", "w");
-    if (fp == NULL) {
-        printf("Error opening file!\n");
-        return;
-    }
-
-    fprintf(fp, "%d\n%s\n%.2f\n", s.id, s.name, s.marks);
-    fclose(fp);
-    printf("Student data saved successfully.\n\n");
-}
-
-void readStudentFromFile() {
-    struct Student s;
-    FILE *fp = fopen("student.txt", "r");
-
-    if (fp == NULL) {
-        printf("Error opening file!\n");
-        return;
-    }
-
-    fscanf(fp, "%d\n", &s.id);
-    fgets(s.name, sizeof(s.name), fp);
-    fscanf(fp, "%f", &s.marks);
-
-    if (s.name[strlen(s.name) - 1] == '\n') {
-        s.name[strlen(s.name) - 1] = '\0';
-    }
-
-    fclose(fp);
-
-    printf("Student Data from File:\n");
-    printf("ID: %d\n", s.id);
-    printf("Name: %s\n", s.name);
-    printf("Marks: %.2f\n", s.marks);
-}
-
-int main() {
-    writeStudentToFile();
-    readStudentFromFile();
-    return 0;
-}</code></pre>
-                <ol>
-                    <li>To read data from a file</li>
-                    <li>To print data to the console</li>
-                    <li><strong>To write formatted data to a file</strong></li>
-                    <li>To close the file after writing</li>
-                </ol>
-            </div>
-   
- </div>
+            <p>Week 5 Quiz coming soon!</p>
+            <!--<p>Quiz answers will be uploaded soon!</p>-->
+            <center><button onclick="window.location.href='https://thecodersclub-mce.github.io/dsa/quiz.html'">
+    Week 5 Quiz
+</button></center>
+        </div>
+    </div>
 </div>
 
 <div id="week6" class="week-content">
     <p style="text-align: left; font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #00408f;">
-        Content for Week 6 - Brainstorming P-01
+        Content for Week 6 - Trees and Graphs (Basics)
     </p>
     <div class="nested-tab-nav">
         <button class="tab-button" onclick="showDay('monday-content-week6', this, 'week6')">Monday</button>
@@ -2540,1557 +1346,56 @@ int main() {
         <button class="tab-button" onclick="showDay('friday-content-week6', this, 'week6')">Friday</button>
         <button class="tab-button" onclick="showDay('saturday-content-week6', this, 'week6')">Saturday</button>
     </div>
-
-<div id="monday-content-week6" class="day-content day-section">
-    <h2>Monday Maverick</h2>
-    <div class="content-block">
-        <h3>How to Build Logic in Programming:</h3>
-        <ul>
-            <li><strong>Understand the problem clearly:</strong> Read the question 2-3 times. Break it into small parts. Don't rush to code.</li>
-            <li><strong>Think in steps, not code:</strong> Imagine solving it in real life. Write down the steps in simple language before jumping to code.</li>
-            <li><strong>Start with simple problems:</strong> Practice basics like:
-                <ul>
-                    <li>Find the largest of 3 numbers.</li>
-                    <li>Reverse a string.</li>
-                    <li>Check if a number is prime.</li>
-                </ul>
-            </li>
-            <li><strong>Dry run your logic:</strong> Go through each line and see what it’s doing. This helps you understand how the logic flows.</li>
-            <li><strong>Practice daily:</strong> Logic building improves with consistency. The more problems you solve, the better you get.</li>
-        </ul>
-    </div>
-
-    <div class="quiz-container">
-        <h3>File Handling in C – Interview Based Questions:</h3>
-        <div class="question-block">
-            <p>1. What is the difference between getc() and fgetc()?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. getc() is a function, while fgetc() is a macro</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. getc() reads from files, fgetc() reads from stdin only</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. getc() can be a macro, while fgetc() is always a function</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. There is no difference between them</div>
-            </div>
-            <div class="quiz-feedback"></div> </div>
-
-        <div class="question-block">
-            <p>2. What is the difference between putc() and fputc()?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q2" data-value="a">A. putc() is a macro, while fputc() is a function</div>
-                <div class="quiz-option" data-question="q2" data-value="b">B. putc() can only write to stdout</div>
-                <div class="quiz-option" data-question="q2" data-value="c">C. fputc() is faster than putc()</div>
-                <div class="quiz-option" data-question="q2" data-value="d">D. There is no difference</div>
-            </div>
-            <div class="quiz-feedback"></div> </div>
-    </div>
-</div>
-<div id="tuesday-content-week6" class="day-content day-section">
-    <h2>Techie Tuesday</h2>
-    <div class="quiz-container">
-        <h3>File Handling in C – Interview Based Questions:</h3>
-        <div class="question-block">
-            <p>1. What is the size of int on a 32-bit system?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. 2 bytes</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. 4 bytes</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. 8 bytes</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Depends on compiler</div>
-            </div>
-            <div class="quiz-feedback"></div>
-        </div>
-
-        <div class="question-block">
-            <p>2. Which function is used to dynamically allocate memory in C?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q2" data-value="a">A. calloc()</div>
-                <div class="quiz-option" data-question="q2" data-value="b">B. malloc()</div>
-                <div class="quiz-option" data-question="q2" data-value="c">C. realloc()</div>
-                <div class="quiz-option" data-question="q2" data-value="d">D. All of the above</div>
-            </div>
-            <div class="quiz-feedback"></div>
-        </div>
-    </div>
-</div>
-<div id="wednesday-content-week6" class="day-content day-section">
-    <h2>Syntax Snapshots Wednesday</h2>
-    <div class="quiz-container">
-        <h3>File Handling in C – Interview Based Questions:</h3>
-        <div class="question-block">
-            <p>What will be the output of the following C code?</p>
-            <pre><code>#include &lt;stdio.h&gt;
-int main() {
-    int a = 10;
-    printf("%d", a++ + ++a);
-    return 0;
-}</code></pre>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. 21</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. 22</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. 20</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Undefined behavior</div>
-            </div>
-            <div class="quiz-feedback"></div>
-        </div>
-
-        <div class="question-block">
-            <p>2. Which of the following is the correct way to declare a pointer to an integer in C?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q2" data-value="a">A. int ptr;</div>
-                <div class="quiz-option" data-question="q2" data-value="b">B. int *ptr;</div>
-                <div class="quiz-option" data-question="q2" data-value="c">C. ptr int*;</div>
-                <div class="quiz-option" data-question="q2" data-value="d">D. int &ptr;</div>
-            </div>
-            <div class="quiz-feedback"></div>
-        </div>
-    </div>
-</div>
-<div id="thursday-content-week6" class="day-content day-section">
-    <h2>Te Ta Thursday</h2>
-    <div class="content-block">
-        <h3>Typedef in C: Creating Custom Data Type Names</h3>
-        <p>The <strong>typedef</strong> keyword in C is used to create a new name, or an alias, for an existing data type. This makes the code easier to read and understand by allowing you to use more meaningful names for complex data types, such as structures, unions, and pointers. It is often used to simplify the declaration of variables.</p>
-    </div>
-    <div class="content-block">
-        <h3>Syntax:</h3>
-        <pre><code>typedef &lt;existing_type&gt; &lt;new_name&gt;;</code></pre>
-    </div>
-    <div class="content-block">
-        <h3>Example:</h3>
-        <pre><code>#include &lt;stdio.h&gt;
-
-// 1. Using typedef with a structure
-// Define a structure named 'Student'
-struct Student {
-    int id;
-    int age;
-};
-
-// Create a new name 'StudentData' for the 'struct Student' type
-typedef struct Student StudentData;
-
-// 2. Using typedef with a basic data type
-// Create a new name 'Ulong' for the 'unsigned long int' type
-typedef unsigned long int Ulong;
-
-int main() {
-    // Declare a variable using the new name 'StudentData'
-    StudentData s1;
-    s1.id = 101;
-    s1.age = 22;
-
-    printf("Student ID: %d\n", s1.id);
-    printf("Student Age: %d\n\n", s1.age);
-
-    // Declare a variable using the new name 'Ulong'
-    Ulong largeNumber = 4294967295;
-    printf("Large number: %lu\n", largeNumber);
-
-    return 0;
-}</code></pre>
-    </div>
-    <div class="content-block">
-        <h3>Output:</h3>
-        <code>Student ID: 101
-Student Age: 22
-
-Large number: 4294967295</code>
-    </div>
-    <div class="quiz-container">
-        <h3>C Typedef Basics:</h3>
-        <div class="question-block">
-            <p>1. What is the primary purpose of the <strong>typedef</strong> keyword in C?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. To define new functions.</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. To allocate dynamic memory.</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. To create a new name for an existing data type.</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. To define constants.</div>
-            </div>
-            <div class="quiz-feedback"></div>
-        </div>
-    </div>
-</div>
-
-<div id="friday-content-week6" class="day-content day-section">
-<!-- <p style="text-align: center; font-style: italic; color: #555;">CONTENT COMING SOON!</p>-->
-     <h2>Function Friday</h2>
-    <div class="content-block">
-        <h3>Unions in C: Memory-Efficient Type Sharing:</h3>
-        <p>A union is a special user-defined data type that can hold members of different data types, but only one member can hold a value at any given time. All members of a union share the same memory location, making them highly memory-efficient.</p>
-    </div>
-    <div class="content-block">
-        <h3>Syntax:</h3>
-        <pre><code>// Union declaration
-union Data {
-    int i;
-    float f;
-    char str[20];
-};</code></pre>
-    </div>
-    <div class="content-block">
-        <h3>Example:</h3>
-        <pre><code>#include &lt;stdio.h&gt;
-
-// Define a union to store different types of data
-union Value {
-    int intVal;
-    float floatVal;
-    char charVal;
-};
-
-int main() {
-    union Value val;
-
-    // Assign and print integer
-    val.intVal = 100;
-    printf("Integer value: %d\n", val.intVal);
-
-    // Assign and print float (overwrites int)
-    val.floatVal = 3.14;
-    printf("Float value: %.2f\n", val.floatVal);
-
-    // Assign and print char (overwrites float)
-    val.charVal = 'A';
-    printf("Char value: %c\n", val.charVal);
-
-    // Show memory size
-    printf("Size of union: %lu bytes\n", sizeof(val));
-
-    return 0;
-};</code></pre>
-    </div>
-    <div class="content-block">
-        <h3>Output:</h3>
-        <code>Integer value: 100
-Float value: 3.14
-Char value: A
-Size of union: 4 bytes</code>
-    </div>
-    <div class="quiz-container">
-        <h3>C Unions Basics:</h3>
-        <div class="question-block">
-            <p>1.  What is a key characteristic of a C union regarding its members and memory allocation?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. All members have separate memory locations.</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. It can hold multiple member values simultaneously.</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. All members share the same memory location, and only one member can hold a value at a time.</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Its size is the sum of the sizes of all its members.</div>
-            </div>
-            <div class="quiz-feedback"></div> </div>
-
-        <div class="question-block">
-            <p>2. Which of the following correctly declares a union named <strong>MyUnion</strong> with an integer member "x" and a float member "y"?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q2" data-value="a">A. MyUnion { int x; float y; };</div>
-                <div class="quiz-option" data-question="q2" data-value="b">B. union MyUnion { int x; float y; };</div>
-                <div class="quiz-option" data-question="q2" data-value="c">C. struct MyUnion { int x; float y; };</div>
-                <div class="quiz-option" data-question="q2" data-value="d">D. declare union MyUnion { int x; float y; };</div>
-            </div>
-            <div class="quiz-feedback"></div> </div>
-    </div>
-</div>
-<div id="saturday-content-week6" class="day-content day-section">
-    <h2>Brain Cache</h2>
-    <div class="content-block">
-        <h3>Expected Answers:</h3>
-        </div>
-    <div class="content-block">
-    <h3>1. What is the purpose of the printf() function in C?</h3>
-    <p>The printf() function in C is used to print formatted output to the standard output device, typically the console (monitor). It allows displaying text, values of variables (integers, floats, characters, strings, etc.), and special characters using format specifiers (like '%d', '%f', '%s', etc.). It's part of the '&lt;stdio.h&gt;' library.</p>
-
-    <h3>2. What is a pointer in C?</h3>
-    <p>A pointer in C is a variable that stores the memory address of another variable. Instead of holding a data value directly, it holds the location (address) where a data value is stored in the computer's memory. Pointers are fundamental for dynamic memory allocation, working with arrays, strings, and implementing data structures like linked lists.</p>
-
-    <h3>3. What is the difference between ++i and i++?</h3>
-    <p>Both '++i' (prefix increment) and 'i++'' (postfix increment) increment the value of the variable 'i' by 1. The difference lies in when the increment occurs relative to the expression's evaluation:</p>
-    <ul>
-        <li>'++i' (Prefix Increment): Increments the value of 'i' <strong>first</strong>, and then uses the <strong>new</strong> (incremented) value in the expression.
-            <ul>
-                <li>Example: 'int i = 5; int j = ++i;'' // 'i' becomes 6, 'j' becomes 6.</li>
-            </ul>
-        </li>
-        <li>'i++' (Postfix Increment): Uses the <strong>current</strong> value of 'i' in the expression <strong>first</strong>, and then increments 'i' after the expression has been evaluated.
-            <ul>
-                <li>Example: 'int i = 5; int j = i++;' // 'i' becomes 6, 'j' becomes 5.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h3>4. What is the purpose of the malloc() function in C?</h3>
-    <p>The malloc() (memory allocation) function in C is used for dynamic memory allocation. It allocates a block of memory of a specified size (in bytes) during program execution from the heap and returns a 'void' pointer to the beginning of the allocated block. If the memory allocation fails, it returns a 'NULL' pointer. The allocated memory is not initialized and contains garbage values. It's part of the '&lt;stdlib.h&gt;' library.</p>
-
-    <h3>5. What is a dangling pointer in C, and how can it be avoided?</h3>
-    <p>A dangling pointer in C is a pointer that points to a memory location that has been deallocated or freed. When the memory is freed, the pointer still holds the address of that now-invalid memory, leading to undefined behavior if dereferenced (e.g., crashes, data corruption, security vulnerabilities).</p>
-    <p>How to avoid it:</p>
-    <ul>
-        <li>Set to NULL after 'free()': After freeing memory pointed to by a pointer, immediately set that pointer to 'NULL'. This makes it a null pointer, which can be safely checked before dereferencing.
-            <ul>
-                <li>Example: free(ptr); ptr = NULL;</li>
-            </ul>
-        </li>
-        <li>Scope Management: Ensure that pointers do not outlive the memory they point to. For example, don't return a pointer to a local variable from a function, as the local variable's memory is deallocated when the function exits.</li>
-        <li>Avoid Double Free: Do not free the same memory block twice, as this can lead to dangling pointers and heap corruption.</li>
-        <li>Use 'realloc()' carefully: If you resize memory with 'realloc()'', and it fails, the original pointer is still valid. If it succeeds and returns a new address, the old pointer might become a dangling pointer if not handled correctly (e.g., if the original memory was moved).</li>
-    </ul>
-</div></div>
-</div>  <!-- add week6 content before these -->
-
-<div id="week7" class="week-content">
-    <p style="text-align: left; font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #00408f;">
-        Content for Week 7 - Brainstorming P-02
-    </p>
-    <div class="nested-tab-nav">
-        <button class="tab-button" onclick="showDay('monday-content-week7', this, 'week7')">Monday</button>
-        <button class="tab-button" onclick="showDay('tuesday-content-week7', this, 'week7')">Tuesday</button>
-        <button class="tab-button" onclick="showDay('wednesday-content-week7', this, 'week7')">Wednesday</button>
-        <button class="tab-button" onclick="showDay('thursday-content-week7', this, 'week7')">Thursday</button>
-        <button class="tab-button" onclick="showDay('friday-content-week7', this, 'week7')">Friday</button>
-        <button class="tab-button" onclick="showDay('saturday-content-week7', this, 'week7')">Saturday</button>
-    </div>
-
-<div id="monday-content-week7" class="day-content day-section">
-    <h2>Monday Maverick</h2>
-    <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-            <p>1. What is the correct syntax of the ternary operator?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. condition ? expr1 : expr2;</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. expr1 ? condition : expr2;</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. condition : expr1 ? expr2;</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. expr1 : expr2 ? condition;</div>
-            </div>
-            <div class="quiz-feedback"></div> </div>
-    </div>
-</div>
-<div id="tuesday-content-week7" class="day-content day-section">
-    <h2>Techie Tuesday</h2>
-    <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-            <p>What will be the output of the following code?</p>
-            <pre><code>#include &lt;stdio.h&gt;
-int main() {
-    int a = 10;
-    printf("%d", a++);
-    return 0;
-}</code></pre>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. 10</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. 11</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. 0</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Compilation error</div>
-            </div>
-            <div class="quiz-feedback"></div>
-        </div>
-    </div>
-</div>
-<div id="wednesday-content-week7" class="day-content day-section">
-    <h2>Syntax Snapshots Wednesday</h2>
-    <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-            <p>What will be the output of the following C code?</p>
-            <pre><code>#include &lt;stdio.h&gt;
-void update(int *a){
-    *a = *a +10;
-}
-
-int main() {
-    int x = 54;
-    update(&x);
-    printf("%d" ,x);
-    return 0;
-}</code></pre>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. 5</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. 10</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. 15</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Compilation error</div>
-            </div>
-            <div class="quiz-feedback"></div>
-        </div>
-    </div>
-</div>
-<div id="thursday-content-week7" class="day-content day-section">
-    <h2>Te Ta Thursday</h2>
-    <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-            <p>What does *p = *q; do in the following code?</p>
-            <pre><code>int a = 5;
-int b = 10;
-int *p = &a;
-int *q = &b;
-*p = *q;</code></pre>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. Copies address of b to p</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. Copies value of b to a</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. Copies address of a to q</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Swaps values of a and b</div>
-            </div>
-            <div class="quiz-feedback"></div>
-        </div>
-    </div>
-</div>
-<div id="friday-content-week7" class="day-content day-section">
-<!-- <p style="text-align: center; font-style: italic; color: #555;">CONTENT COMING SOON!</p>-->
-     <h2>Function Friday</h2>
-    <div class="quiz-container">
-        <h3>Question</h3>
-        <div class="question-block">
-            <p>1.  What is the output of this code involving arrays and pointers?</p>
-            <pre><code>#include &lt;stdio.h&gt;
-int main() { 
-    int arr[] = {1,2,3,4};
-    printf("%d",*(arr + 2));
-    return 0;
-}</code></pre>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. 2</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. 3</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. 1</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Error</div>
-            </div>
-            <div class="quiz-feedback"></div> </div>
-    </div>
-</div>
-<div id="saturday-content-week7" class="day-content day-section">
-    <h2>Brain Cache</h2>
-    <div class="content-block">
-        <h3>1. Which is true about the const keyword in C?</h3>
-        <ol>
-            <li>A. It creates a constant pointer.</li>
-            <li><strong>B. It prevents modification of the value it points to.</strong></li>
-            <li>C. It can be changed using pointer tricks.</li>
-            <li>D. It's the same as #define</li>
-        </ol>
-    </div>
     
-    <div class="content-block">
-        <h3>2. What is wrong with this loop?</h3>
-        <pre class="code-block"><code>for (int i = 0; i < 10; i--);</code></pre>
-        <ol>
-            <li>A. i should be declared outside.</li>
-            <li>B. Semicolon is missing.</li>
-            <li><strong>C. Infinite loop.</strong></li>
-            <li>D. Nothing wrong.</li>
-        </ol>
-    </div>
-    
-    <div class="content-block">
-        <h3>3. Which of the following statements correctly frees memory allocated by malloc in C?</h3>
-        <ol>
-            <li>A. deallocate(p);</li>
-            <li><strong>B. free(p);</strong></li>
-            <li>C. delete p;</li>
-            <li>D. release(p);</li>
-        </ol>
-    </div>
-    
-    <div class="content-block">
-        <h3>4. Spot the logical error:</h3>
-        <pre class="code-block"><code>while (1 == 1); {
-printf("Hi");
-}</code></pre>
-        <ol>
-            <li>A. Infinite loop prints "Hi" repeatedly.</li>
-            <li>B. Syntax error.</li>
-            <li><strong>C. Semicolon ends the loop before block.</strong></li>
-            <li>D. Nothing wrong.</li>
-        </ol>
-    </div>
-    
-    <div class="content-block">
-        <h3>5. Give a c program to print the pattern:</h3>
-        <pre class="code-block"><code>1
-2 3
-4 5 6
-7 8 9 10</code></pre>
-<p><strong>Expected answer (focus on the loop part):</strong></p>
-                <pre><code>#include &lt;stdio.h&gt;
-int main() {
-    int rows = 4;
-    int num = 1;
-    for (int i = 1; i <= rows; i++) {
-        for (int j = 1; j <= i; j++) {
-            printf("%d ", num++);
-}
-    printf("\n");
-}
-    return 0;
-}</code></pre>
-    </div>
-    <!-- <p style="text-align: center; font-style: italic; color: #555;">WEEK 6 QUIZ ENDED. WAIT FOR LEADERBOARD UPDATES!</p> -->
-</div>
-</div>  <!-- add week7 content before these -->  
-<div id="week8" class="week-content">
-    <p style="text-align: left; font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #00408f;">
-        Content for Week 8 - Brainstorming P-03
-    </p>
-    <div class="nested-tab-nav">
-        <button class="tab-button" onclick="showDay('monday-content-week8', this, 'week8')">Monday</button>
-        <button class="tab-button" onclick="showDay('tuesday-content-week8', this, 'week8')">Tuesday</button>
-        <button class="tab-button" onclick="showDay('wednesday-content-week8', this, 'week8')">Wednesday</button>
-        <button class="tab-button" onclick="showDay('thursday-content-week8', this, 'week8')">Thursday</button>
-        <button class="tab-button" onclick="showDay('friday-content-week8', this, 'week8')">Friday</button>
-        <button class="tab-button" onclick="showDay('saturday-content-week8', this, 'week8')">Saturday</button>
-    </div>
-
-<div id="monday-content-week8" class="day-content day-section">
-    <h2>Monday Maverick</h2>
-    <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-<p>1. In C++, which of the following is NOT considered a fundamental data type?</p>
-<div class="options">
-<div class="quiz-option" data-question="q1" data-value="a">A. int</div>
-<div class="quiz-option" data-question="q1" data-value="b">B. float</div>
-<div class="quiz-option" data-question="q1" data-value="c">C. string</div>
-<div class="quiz-option" data-question="q1" data-value="d">D. char</div>
-</div>
-<div class="quiz-feedback"></div>
-</div>
-    </div>
-</div>
-<div id="tuesday-content-week8" class="day-content day-section">
-    <h2>Techie Tuesday</h2>
-    <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-            <p>1. Which operator has higher precedence?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. Prefix increment (++i)</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. Postfix increment (i++)</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. Both have same precedence</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Depends upon compiler</div>
-            </div>
-            <div class="quiz-feedback"></div> </div>
-        <div class="question-block">
-            <p>2. What is the mistake here?</p>
-            <pre><code>int arr[3];
-arr[3] = 10;</code></pre>
-            <div class="options">
-                <div class="quiz-option" data-question="q2" data-value="a">A. No error</div>
-                <div class="quiz-option" data-question="q2" data-value="b">B. Index out ob bounds</div>
-                <div class="quiz-option" data-question="q2" data-value="c">C. Array too small</div>
-                <div class="quiz-option" data-question="q2" data-value="d">D. Compilation fails</div>
-            </div>
-            <div class="quiz-feedback"></div>
-            
+    <div id="monday-content-week6" class="day-content day-section">
+        <h2>Monday Maverick</h2>
+        <div class="content-block">
+            <p>Content coming soon!</p>
         </div>
     </div>
-</div>
-<div id="wednesday-content-week8" class="day-content day-section">
-    <h2>Syntax Snapshots Wednesday</h2>
-    <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-            <p>1. What will be the output of this code?</p>
-            <pre><code>int a = 10;
-int b = 20;
-printf("%d", a+++b);</code></pre>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. 30</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. 31</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. 21</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Syntax error</div>
-            </div>
-            <div class="quiz-feedback"></div>
+
+    <div id="tuesday-content-week6" class="day-content day-section">
+        <h2>Techie Tuesday</h2>
+        <div class="content-block">
+            <p>Content coming soon!</p>
         </div>
     </div>
-</div>
-<div id="thursday-content-week8" class="day-content day-section">
-    <h2>Te Ta Thursday</h2>
-    <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-            <p>1. What will be the output?</p>
-            <pre><code>#include &lt;stdio.h&gt;
-voidfunc1(){
-    printf("Inside func1\n");
-}
 
-voidfunc2(){
-    printf("Inside func2\n");
-}
-
-void(*func_ptr[2])() = {func1, func2};
-
-int main() {
-(*func_ptr[0])();
-func_ptr[1]();
-return 0;
-}</code></pre>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. Inside func1Inside func1</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. Inside func1Inside func2</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. Inside func2Inside func1</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Compilation error</div>
-            </div>
-            <div class="quiz-feedback"></div>
+    <div id="wednesday-content-week6" class="day-content day-section">
+        <h2>Syntax Snapshots Wednesday</h2>
+        <div class="content-block">
+            <p>Content coming soon!</p>
         </div>
     </div>
-</div>
-<div id="friday-content-week8" class="day-content day-section">
-<!-- <p style="text-align: center; font-style: italic; color: #555;">CONTENT COMING SOON!</p>-->
-     <h2>Function Friday</h2>
-    <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-            <p>1.  What will be the output of the following C code?</p>
-            <pre><code>#include &lt;stdio.h&gt;
-void counter(){
-    static int count = 0;
-    count++;
-    print("d", count);
-}
 
-int main(){
-    counter();
-    counter();
-    counter();
-    return 0;
-}</code></pre>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. 1 1 1</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. 0 1 2</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. 1 2 3</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Error</div>
-            </div>
-            <div class="quiz-feedback"></div> </div>
-    </div>
-</div>
-<div id="saturday-content-week8" class="day-content day-section">
-    <h2>Brain Cache</h2>
-    <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-            <p>1.  If sizeof(int) returns 4, how many bits does it represent?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. 16  bits</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. 32 bits</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. 15 bits</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Depends on the machine clock</div>
-            </div>
-            <div class="quiz-feedback"></div> </div>
-    </div>
-</div>
-</div>  <!-- add week8 content before these -->  
-<div id="week9" class="week-content">
-    <p style="text-align: left; font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #00408f;">
-        Content for Week 9 - Programming Concepts and Challenges P-01
-    </p>
-    <div class="nested-tab-nav">
-        <button class="tab-button" onclick="showDay('monday-content-week9', this, 'week9')">Monday</button>
-        <button class="tab-button" onclick="showDay('tuesday-content-week9', this, 'week9')">Tuesday</button>
-        <button class="tab-button" onclick="showDay('wednesday-content-week9', this, 'week9')">Wednesday</button>
-        <button class="tab-button" onclick="showDay('thursday-content-week9', this, 'week9')">Thursday</button>
-        <button class="tab-button" onclick="showDay('friday-content-week9', this, 'week9')">Friday</button>
-        <button class="tab-button" onclick="showDay('saturday-content-week9', this, 'week9')">Saturday</button>
-    </div>
-
-<div id="monday-content-week9" class="day-content day-section">
-    <h2>Monday Maverick</h2>
-    <div class="content-block">
-        <h3>A–Z list of programming languages:</h3>
-        <ol>
-            <li>A – Assembly<br>Low-level language used to communicate directly with hardware.</li>
-            <li>B – BASIC<br>Beginner’s All-purpose Symbolic Instruction Code – great for early learning.</li>
-            <li>C – C<br>Powerful systems programming language used in OS, embedded systems.</li>
-            <li>D – Dart<br>Used primarily for Flutter to build cross-platform mobile apps.</li>
-            <li>E – Elixir<br>Functional language for scalable, maintainability applications.</li>
-            <li>F – Fortran<br>One of the oldest languages, still used in scientific computing.</li>
-            <li>G – Go (Golang)<br>Developed by Google, known for its simplicity and performance.</li>
-            <li>H – Haskell<br>Purely functional language used in academia and finance.</li>
-            <li>I – Io<br>Minimalist prototype-based language with a small syntax.</li>
-            <li>J – Java<br>Versatile, object-oriented, used in enterprise, Android, and web apps.</li>
-            <li>K – Kotlin<br>Modern JVM language, official for Android development.</li>
-            <li>L – Lua<br>Lightweight scripting language often used in game development.</li>
-            <li>M – MATLAB<br>Designed for numerical computing and simulations.</li>
-            <li>N – Nim<br>Statically typed compiled language that is fast and expressive.</li>
-            <li>O – Objective-C<br>Used mainly for macOS and iOS development (pre-Swift era).</li>
-            <li>P – Python<br>Beginner-friendly, widely used in data science, web, AI, automation.</li>
-            <li>Q – Q#<br>Quantum programming language developed by Microsoft.</li>
-            <li>R – Ruby<br>Elegant syntax, used in web development (especially Rails framework).</li>
-            <li>S – Swift<br>Apple’s modern language for iOS, macOS development.</li>
-            <li>T – TypeScript<br>Superset of JavaScript adding static types, improving large-scale JS apps.</li>
-            <li>U – Unicon<br>Language combining goal-directed evaluation with object-oriented features.</li>
-            <li>V – V<br>Simple, fast language designed for safety and readability.</li>
-            <li>W – Wolfram Language<br>Used in Mathematica, powerful for symbolic computation and math.</li>
-            <li>X – Xojo<br>Cross-platform app development language with a VB-like syntax.</li>
-            <li>Y – Yorick<br>Used in scientific simulations and numerical computation.</li>
-            <li>Z – Zig<br>Low-level, safe language for systems programming, alternative to C.</li>
-        </ol>
-    </div>
-</div>
-<div id="tuesday-content-week9" class="day-content day-section">
-    <h2>Techie Tuesday</h2>
-    <div class="quiz-container">
-        <h3>Spot the Error Challenge:</h3>
-        <div class="question-block">
-            <p>1. Find the mistake in this code:</p>
-            <pre><code>#include &lt;stdio.h&gt;
-int main() {
-    int a = 10;
-    if (a = 5)
-        printf("Yes");
-    return 0;
-}</code></pre>
-<p>What's wrong?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. Nothing</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. Assignment u8sed instead of comparision</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. Syntax error</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Loop is missing</div>
-            </div>
-            <div class="quiz-feedback"></div> </div>
-    </div>
-</div>
-<div id="wednesday-content-week9" class="day-content day-section">
-    <h2>Syntax Snapshots Wednesday</h2>
-    <div class="content-block">
-    <h3>1. C Memory Layout (Intermediate View)</h3>
-    <p>Description:<br>This diagram breaks down how a C program is loaded into memory:</p>
-    <ul>
-        <li>Code Segment: Stores compiled code</li>
-        <li>Stack: Stores function calls, local variables (LIFO)</li>
-        <li>Heap: Dynamically allocated memory (malloc, calloc)</li>
-        <li>Data Segment: Global and static variables</li>
-    </ul>
-    <p>Understanding this is key for debugging, memory optimization, and pointer management.</p>
-    </div>
-</div>
-<div id="thursday-content-week9" class="day-content day-section">
-    <h2>Te Ta Thursday</h2>
-    <div class="content-block">
-    <h3>Career Opportunities with C Language (2025)</h3>
-            <p>Knowing C language can open up various career opportunities in 2025. Here are some potential paths:</p>
-            <h4>Job Roles</h4>
-            <ol>
-                <li>Junior Programmer: Basic coding, debugging, reviewing codes, and technical documentation.</li>
-                <li>Senior Programmer: Experienced programmer with expertise in software development.</li>
-                <li>Software Developer: Creating and marketing software.</li>
-                <li>Quality Analyst: Analyzing software design and functionality.</li>
-                <li>Game Programmer: Developing codebases for gaming software.</li>
-                <li>Embedded Engineer: Developing embedded systems with a focus on microcontrollers and real-time operating systems.</li>
-                <li>Database Developer: Designing, modifying, and troubleshooting databases.</li>
-                <li>Programming Architect: Designing and implementing software architectures.</li>
-            </ol>
-            <h4>Industries</h4>
-            <ul>
-                <li>Finance: Financial modeling, trading platforms, and risk management.</li>
-                <li>Healthcare: Developing medical devices, patient monitoring systems, and clinical decision support systems.</li>
-                <li>Gaming: Building game engines, physics engines, and dynamic simulations.</li>
-                <li>Embedded Systems: Automotive, robotics, and IoT development.</li>
-            </ul>
-            <h4>Key Skills</h4>
-            <ul>
-                <li>Problem-solving: Strong problem-solving skills to debug and optimize code.</li>
-                <li>System programming: Understanding of system calls, memory management, and file systems.</li>
-                <li>Algorithm design: Knowledge of algorithms and data structures is crucial for efficient programming.</li>
-            </ul>
-</div>
-</div>
-<div id="friday-content-week9" class="day-content day-section">
-<!-- <p style="text-align: center; font-style: italic; color: #555;">CONTENT COMING SOON!</p>-->
-     <h2>Function Friday</h2>
-     <div class="content-block">
-     <h3>Let's unravel a little mystery about how your C code actually turns into a program.</h3>
-            <p>Before your computer can even understand what your 'int's and 'if's mean, there's a crucial first step! Imagine your C code is a recipe. The compiler (your digital chef) has a "checklist" it goes through before it starts cooking your program.</p>
-            <p>What's the very first thing the compiler looks for in a typical C program that uses printf to print text?</p>
-            <p>Which "ingredient" on the compiler's checklist comes first? Share your thoughts!</p>
+    <div id="thursday-content-week6" class="day-content day-section">
+        <h2>Te Ta Thursday</h2>
+        <div class="content-block">
+            <p>Content coming soon!</p>
         </div>
-        <div class="quiz-container">
-            <h3>Question:</h3>
-            <div class="question-block">
-                <p>Is it..</p>
-                <div class="options">
-                    <div class="quiz-option" data-question="q1" data-value="a">A. The main() function?</div>
-                    <div class="quiz-option" data-question="q1" data-value="b">B. The #include &lt;stdio.h&gt; line?</div>
-                    <div class="quiz-option" data-question="q1" data-value="c">C. A specific variable declaration?</div>
-                </div>
-                <div class="quiz-feedback"></div> </div>
-        </div>
+    </div>
 
-</div>
-    <div id="saturday-content-week9" class="day-content day-section">
+    <div id="friday-content-week6" class="day-content day-section">
+        <h2>Function Friday</h2>
+        <div class="content-block">
+            <p>Content coming soon!</p>
+        </div>
+    </div>
+    <div id="saturday-content-week6" class="day-content day-section">
         <h2>Brain Cache</h2>
         <div class="content-block">
-            <h3>1. What is the output of the following C code snippet?</h3>
-            <pre><code>int x = 10;
-    printf("%d", ++x);</code></pre>
-    <ol>
-        <li>A. 10</li>
-        <li><strong>B. 11</strong></li>
-        <li>C. Undefined behavior</li>
-        <li>D. Compiler error</li>
-    </ol>    
-            <h3>2. Which header file must be included to use malloc() and free() functions in C?</h3>
-            <ol>
-                <li>A. stdio.h</li>
-                <li>B. string.h</li>
-                <li><strong>C. stdlib.h</strong></li>
-                <li>D. math.h</li>
-            </ol>
-            <h3>3. What is the purpose of the `break` statement in C?</h3>
-            <ol>
-                <li>A. To exit the program.</li>
-                <li>B. To skip the current iteration of a loop.</li>
-                <li><strong>C. To terminate a loop or switch statement.</strong></li>
-                <li>D. To jump to a specific label.</li>
-            </ol>
-    
-            <h3>4. In C, what does sizeof(char) typically return?</h3>
-            <ol>
-                <li>A. 0 bytes</li>
-                <li><strong>B. 1 byte</strong></li>
-                <li>C. 2 bytes</li>
-                <li>D. 4 bytes</li>
-            </ol>
-    
-            <h3>5. Write a C program to swap two numbers without using a third variable.</h3>
-            <p><strong>Expected Answer (focus on logic):</strong></p>
-            <pre><code>#include &lt;stdio.h&gt;
-int main() {
-
-int num1 = 5;
-int num2 = 10;
-
-printf("Before swap: num1 = %d, num2 = %d\n", num1, num2);
-
-// Swap using arithmetic operations
-num1 = num1 + num2; // num1 now holds the sum
-num2 = num1 - num2; // num2 now holds the original num1
-num1 = num1 - num2; // num1 now holds the original num2
-
-printf("After swap: num1 = %d, num2 = %d\n", num1, num2);
-return 0;
-}</code></pre>
+            <p>Week 6 Quiz coming soon!</p>
         </div>
     </div>
-</div>  <!-- add week10 content before these -->  
+</div>  <!-- add week6 content before these -->  
 <div id="week10" class="week-content">
-    <p style="text-align: left; font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #00408f;">
-        Content for Week 10 - Programming Concepts and Challenges P-02
-    </p>
-    <div class="nested-tab-nav">
-        <button class="tab-button" onclick="showDay('monday-content-week10', this, 'week10')">Monday</button>
-        <button class="tab-button" onclick="showDay('tuesday-content-week10', this, 'week10')">Tuesday</button>
-        <button class="tab-button" onclick="showDay('wednesday-content-week10', this, 'week10')">Wednesday</button>
-        <button class="tab-button" onclick="showDay('thursday-content-week10', this, 'week10')">Thursday</button>
-        <button class="tab-button" onclick="showDay('friday-content-week10', this, 'week10')">Friday</button>
-        <button class="tab-button" onclick="showDay('saturday-content-week10', this, 'week10')">Saturday</button>
-    </div>
-
-<div id="monday-content-week10" class="day-content day-section">
-    <h2>Monday Maverick</h2>
-    <div class="quiz-container">
-        <h3>Questions:</h3>
-    <div class="question-block">
-        <p>1. What are the key components of a node in a singly linked list in C?</p>
-        <div class="options">
-            <div class="quiz-option" data-question="q1" data-value="a">A. int node[10];</div>
-            <div class="quiz-option" data-question="q1" data-value="b">B. struct Node { int data; struct Node* next; };</div>
-            <div class="quiz-option" data-question="q1" data-value="c">C. char *node = "linked";</div>
-            <div class="quiz-option" data-question="q1" data-value="d">D. All of the above</div>
-        </div>
-        <div class="quiz-feedback"></div>
-    </div>
-
-    <!-- Question 2 -->
-    <div class="question-block">
-        <p>2. What will be the output?
-char str[20] = "Hello"; 
-strcat(str, " World"); 
-printf("%s", str);</p>
-        <div class="options">
-            <div class="quiz-option" data-question="q2" data-value="a">A. Hello</div>
-            <div class="quiz-option" data-question="q2" data-value="b">B. HelloWorld</div>
-            <div class="quiz-option" data-question="q2" data-value="c">C. Hello World</div>
-            <div class="quiz-option" data-question="q2" data-value="d">D. Compilation Error</div>
-        </div>
-        <div class="quiz-feedback"></div>
-    </div>
-
-    <!-- Question 3 -->
-    <div class="question-block">
-        <p>3. Which functions in C are used for dynamic memory allocation?</p>
-        <div class="options">
-            <div class="quiz-option" data-question="q3" data-value="a">A. scanf() and printf()</div>
-            <div class="quiz-option" data-question="q3" data-value="b">B. malloc() and calloc()</div>
-            <div class="quiz-option" data-question="q3" data-value="c">C. malloc() and scanf()</div>
-            <div class="quiz-option" data-question="q3" data-value="d">D. calloc() and strlen()</div>
-        </div>
-        <div class="quiz-feedback"></div>
-    </div>
-
-    <!-- Question 4 -->
-    <div class="question-block">
-        <p>4. What will be the output of factorial(4) using this function?
-int factorial(int n)
-{ 
-if(n <= 1) return 1; return n * factorial(n - 1); 
-}</p>
-        <div class="options">
-            <div class="quiz-option" data-question="q4" data-value="a">A. 24</div>
-            <div class="quiz-option" data-question="q4" data-value="b">B. 12</div>
-            <div class="quiz-option" data-question="q4" data-value="c">C. 4</div>
-            <div class="quiz-option" data-question="q4" data-value="d">D. 1</div>
-        </div>
-        <div class="quiz-feedback"></div>
-    </div>
-
-    <!-- Question 5 -->
-    <div class="question-block">
-        <p>5. What is the most efficient way to reverse an array in C?</p>
-        <div class="options">
-            <div class="quiz-option" data-question="q5" data-value="a">A. Create a new array and copy in reverse</div>
-            <div class="quiz-option" data-question="q5" data-value="b">B. Use recursion only</div>
-            <div class="quiz-option" data-question="q5" data-value="c">C. Swap elements from both ends using a loop</div>
-            <div class="quiz-option" data-question="q5" data-value="d">D. Sort the array in descending order</div>
-        </div>
-        <div class="quiz-feedback"></div>
-    </div>
-</div>
-</div>
-<div id="tuesday-content-week10" class="day-content day-section">
-    <h2>Techie Tuesday</h2>
-    <div class="content-block">
-    <h3>Write a C program to check whether two given strings are anagrams of each other or not.</h3>
-    <p>(Ignore case sensitivity and spaces)</p>
-    <p><strong>Example:</strong></p>
-<p>Input: "listen" and "silent"<br>Output: "Yes, they are anagrams."</p>
-    </ul>
-    <p><strong>Expected code:</strong></p>
-    <pre><code>#include &lt;stdio.h&gt;
-#include &lt;string.h&gt;
-#include &lt;stdlib.h&gt; // Required for malloc, free, and strdup
-#include &lt;ctype.h&gt;// Required for tolower and isspace
-            
- // Function to clean a string: removes spaces and converts to lowercase.
-// This function modifies the string in place.
-
-void cleanString(char *str) {\
-    int i, j = 0;
-    // Iterate through the string
-    for (i = 0; str[i] != '\0'; i++) {
-        // If the character is not a whitespace, process it
-        if (!isspace((unsigned char)str[i])) {
-            // Convert to lowercase and store it at the current 'j' position
-            tr[j++] = tolower((unsigned char)str[i]);
-        }
-    }
-    // Null-terminate the cleaned string at the new end
-    str[j] = '\0';
-}
-            
-// Function to check if two strings are anagrams of each other.
-// Ignores case sensitivity and spaces.
-// This function creates internal copies of the input strings to avoid
-// modifying the original strings passed by the caller.
-// Returns 1 if they are anagrams, 0 otherwise.
-int areAnagrams(const char *str1, const char *str2) {
-    // Duplicate the input strings to allow for in-place modification by cleanString.
-    // Using strdup is crucial here to avoid altering the original strings.
-    // strdup allocates memory on the heap, so it must be freed later.
-    char *s1_cleaned = strdup(str1);
-    char *s2_cleaned = strdup(str2);
-            
-    // Check for memory allocation failure
-    if (s1_cleaned == NULL || s2_cleaned == NULL) {
-        fprintf(stderr, "Memory allocation failed.\n"); // Removed specific error message
-        // Free any allocated memory before returning
-        if (s1_cleaned) free(s1_cleaned);
-            if (s2_cleaned) free(s2_cleaned);
-                    return 0; // Indicate failure or not an anagram due to memory error
-    }
-            
-    // Clean both duplicated strings
-    cleanString(s1_cleaned);
-     cleanString(s2_cleaned);
-            
-    // If the lengths of the cleaned strings are different, they cannot be anagrams.
-    if (strlen(s1_cleaned) != strlen(s2_cleaned)) {
-        free(s1_cleaned);
-        free(s2_cleaned);
-        return 0;
-    }
-            
-    // Use frequency arrays to count character occurrences.
-    // An array of 256 integers covers all possible ASCII character values.
-    int count1[256] = {0}; // Initialize all counts to 0 for s1_cleaned
-    int count2[256] = {0}; // Initialize all counts to 0 for s2_cleaned
-    int i;
-            
-    // Populate count1 array with frequencies from s1_cleaned
-    for (i = 0; s1_cleaned[i] != '\0'; i++) {
-        count1[(unsigned char)s1_cleaned[i]]++;
-    }
-            
-    // Populate count2 array with frequencies from s2_cleaned
-    for (i = 0; s2_cleaned[i] != '\0'; i++) {
-        count2[(unsigned char)s2_cleaned[i]]++;
-    }
-            
-    // Compare the frequency arrays. If any character count differs, they are not anagrams.
-    for (i = 0; i < 256; i++) {
-        if (count1[i] != count2[i]) {
-            free(s1_cleaned);
-            free(s2_cleaned);
-            return 0; // Not anagrams
-        }
-    } 
-            
-    // If all character counts match, they are anagrams.
-    free(s1_cleaned); // Free the dynamically allocated memory
-    free(s2_cleaned); // Free the dynamically allocated memory
-    return 1; // Are anagrams
-}
-            
-int main() {
-    char str1_input[100]; // Buffer for the first user-entered string
-    char str2_input[100]; // Buffer for the second user-entered string
-            
-    printf("Enter the first string: ");
-    // fgets reads a line from stdin, including the newline character.
-    fgets(str1_input, sizeof(str1_input), stdin);
-    // Remove the trailing newline character if present.
-    str1_input[strcspn(str1_input, "\n")] = 0;
-            
-    printf("Enter the second string: ");
-    fgets(str2_input, sizeof(str2_input), stdin);
-    str2_input[strcspn(str2_input, "\n")] = 0;
-          
-    // Call areAnagrams with the user input.
-    // The original str1_input and str2_input arrays will remain unchanged.
-    if (areAnagrams(str1_input, str2_input)) {
-        printf("Yes, they are anagrams.\n");
-    }
-    else {
-        printf("No, they are not anagrams.\n");
-    }
-return 0; // Exit after processing one input
-}</code></pre>
-<p><strong>Output:</strong></p>
-<code>Enter the first string: listen
-Enter the second string: silent
-Yes, they are anagrams.
-
----------------
-
-Enter the first string: hello
-Enter the second string: world
-No, they are not anagrams.</code>
-    </div>
-</div>
-<div id="wednesday-content-week10" class="day-content day-section">
-    <h2>Syntax Snapshots Wednesday</h2>
-    <h3>Try to solve this puzzle using clues to be mentioned and find answer for it.</h3>
-    <p><strong>Question:</strong> Which C concept lets you group function addresses and switch them at runtime?</p>
-    <h4>(🧰👉🏻⚙️🎮) -> Clues</h4>
-    <p><strong>Hint:</strong> Like a remote control for functions!</p>
-    <ul>
-        <li>🧰 -> Tool box (Represents a collection of Item)</li>
-        <li>👉🏻 -> Finger Pointing (Represents a pointer)</li>
-        <li>⚙️ -> Gear Icon (Represents a Function or Behaviour)</li>
-        <li>🎮 -> Game Controller (Represents  you can control from the outside)</li>
-    </ul>
-    <div class="quiz-container">
-    <div class="question-block">
-        <p>Above question's answer?</p>
-        <div class="options">
-            <div class="quiz-option" data-question="q1" data-value="a">A. Loop in C programming</div>
-            <div class="quiz-option" data-question="q1" data-value="b">B. Struct in C programming</div>
-            <div class="quiz-option" data-question="q1" data-value="c">C. Function pointers in struct in C programming</div>
-            <div class="quiz-option" data-question="q1" data-value="d">D. Functions in C programming</div>
-        </div>
-        <div class="quiz-feedback"></div>
-    </div>
-</div>
-</div>
-<div id="thursday-content-week10" class="day-content day-section">
-    <h2>Te Ta Thursday</h2>
-    <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-            <p>1. You declare a variable inside a function like this:</p>
-            <pre><code>int x = 42;</code></pre>
-            <p>Where is this variable stored in memory?</p>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. Heap</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. Stacks</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. Global Memory</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. Register</div>
-            </div>
-            <div class="quiz-feedback"></div>
-        </div>
-
-    </div>
-</div>
-<div id="friday-content-week10" class="day-content day-section">
-     <h2>Function Friday</h2>
-     <div class="quiz-container">
-        <h3>Question:</h3>
-        <div class="question-block">
-            <p>1. What will this code output?</p>
-            <pre><code>int x = 5;
-float y = 2;
-printf("%D", x / y);</code></pre>
-            <div class="options">
-                <div class="quiz-option" data-question="q1" data-value="a">A. 2.5</div>
-                <div class="quiz-option" data-question="q1" data-value="b">B. 2</div>
-                <div class="quiz-option" data-question="q1" data-value="c">C. Compiler error</div>
-                <div class="quiz-option" data-question="q1" data-value="d">D. 0</div>
-            </div>
-            <div class="quiz-feedback"></div>
-        </div>
-
-    </div>
-
-</div>
-    <div id="saturday-content-week10" class="day-content day-section">
-        <h2>Brain Cache</h2>
-        <p style="text-align: center; font-style: italic; color: #555;">NO QUIZ FOR WEEK 10</p>
-
-    </div>
-</div>  <!-- add week10 content before these -->  
-
-<div id="week11" class="week-content">
 <p style="text-align: left; font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #00408f;">Mindmash</p>
     <div class="nested-tab-nav">
-        <button class="tab-button" onclick="showDay('monday-content-week11', this, 'week11')">Quiz 1</button>
+        <button class="tab-button" onclick="showDay('monday-content-week10', this, 'week10')">Quiz 1</button>
     </div>
 
-    <div id="monday-content-week11" class="day-content day-section">
-        <h2>Mindmash - Quiz 1</h2>
-        <div class="content-block">
-            <h3>1. What are header files in C programming?</h3>
-            <ol>
-                <li>Files that contain the main function</li>
-                <li>Files that are executed before the program runs</li>
-                <li><strong>Files that contain function declarations and macros</strong></li>
-                <li>Files used for memory allocation</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>2. Which of the following appears valid at first glance but is actually an invalid variable declaration in C?</h3>
-            <ol>
-                <li>char str[20] = "Hello";</li>
-                <li><strong>int @salary = 5000;</strong></li>
-                <li>float salary2025 = 99999.99;</li>
-                <li>int NumberOfStudents = 50;</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>3. What could be the outcome when the following C program is compiled and executed?</h3>
-            <pre class="code-block"><code>#include &lt;stdio.h&gt; // Preprocessor directive
-
-// main function - entry point of the program
-int main() {
-   // Print output to the screen
-   printf("Hello, World!\\n");
-
-   return 0; // Exit the program
-}
-</code></pre>
-            <ol>
-                <li>It prints Hello, World! to the screen.</li>
-                <li>It throws a compilation error due to missing semicolon.</li>
-                <li><strong>It prints Hello, World!\n as-is, including \n.</strong></li>
-                <li>It waits for user input before printing anything.</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>4. A programmer wants to create a custom data type to represent a person's details, including their name, age, and address. What feature of C programming would be most suitable for this purpose?</h3>
-            <ol>
-                <li>Arrays</li>
-                <li>Pointers</li>
-                <li><strong>Structures</strong></li>
-                <li>Functions</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>5. Which of the following is *NOT* a valid category of functions in C?</h3>
-            <ol>
-                <li>Library Functions</li>
-                <li>User-Defined Functions</li>
-                <li>Recursive Functions</li>
-                <li><strong>Loop-Control Functions</strong></li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>6. Which of the following is NOT a control structure in C?</h3>
-            <ol>
-                <li>if-else</li>
-                <li>for loop</li>
-                <li>switch</li>
-                <li><strong>print</strong></li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>7. Which of the following code snippets will cause an error or unexpected behavior in C?</h3>
-            <pre class="code-block"><code>A. int num = 5;
-if (num == 5); {
-   printf("Number is 5");
-}
-
-B. int x = 10;
-if (x &gt; 0)
-   printf("Positive");
-else
-   printf("Negative");
-
-C. int option = 3;
-switch(option) {
-   case 1: printf("One"); break;
-   case 2: printf("Two"); break;
-   default: printf("Other");
-}
-
-D. int a = 15;
-if (a &lt; 10)
-   printf("Less than 10");
-else if (a &lt; 20)
-   printf("Less than 20");
-else
-   printf("20 or more");
-</code></pre>
-            <ol>
-                <li><strong>A</strong></li>
-                <li>B</li>
-                <li>C</li>
-                <li>D</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>8. What could be a possible behavior when this C program runs?</h3>
-            <pre class="code-block"><code>#include &lt;stdio.h&gt;
-
-int main() {
-    int numbers[] = {10, 20, 30, 40, 50};
-    int *ptr = numbers; // Pointer to the first element
-
-    printf("Value at ptr: %d\n", *ptr);
-    ptr++; // Move to the next element
-    printf("Value at ptr after increment: %d\n", *ptr);
-
-    return 0;
-}
-</code></pre>
-            <ol>
-                <li>It will print "Value at ptr: 10" and then "Value at ptr after increment: 11".</li>
-                <li><strong>It will print "Value at ptr: 10" and then "Value at ptr after increment: 20".</strong></li>
-                <li>It will cause a segmentation fault because `ptr` is incremented.</li>
-                <li>It will print the memory addresses of the array elements.</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>9. A structure in C has a char member followed by an int member. However, the total size of the structure is larger than the sum of the sizes of its members. What is the likely reason for this discrepancy?</h3>
-            <ol>
-                <li>The structure is packed tightly in memory.</li>
-                <li>The structure is aligned to a 4-byte boundary.</li>
-                <li><strong>The structure has extra padding for memory alignment.</strong></li>
-                <li>The structure is compressed to reduce its size.</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>10. What is the main characteristic of a do...while loop compared to a while loop?</h3>
-            <ol>
-                <li>It checks the condition before executing the loop body</li>
-                <li>It never executes if the condition is false</li>
-                <li><strong>It executes the loop body at least once before checking the condition</strong></li>
-                <li>It cannot use break statements</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>11. Which keyword is used to return a value from a function?</h3>
-            <ol>
-                <li><strong>return</strong></li>
-                <li>send</li>
-                <li>break</li>
-                <li>exit</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>12. What will be the output of the following C code?</h3>
-            <pre class="code-block"><code>#include &lt;stdio.h&gt;
-
-int main() {
-    int arr[5] = {1, 2, 3};
-    for (int i = 0; i &lt; 5; i++) {
-        printf("%d ", arr[i]);
-    }
-    return 0;
-}
-</code></pre>
-            <ol>
-                <li><strong>1 2 3 0 0</strong></li>
-                <li>1 2 3 garbage garbage</li>
-                <li>Compilation error</li>
-                <li>1 2 3 4 5</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>13. Which of the following best describes what the pointer `ptr` does in the program?</h3>
-            <pre class="code-block"><code>#include &lt;stdio.h&gt;
-
-int main() {
-    int a = 10;
-    int *ptr = &amp;a; // Pointer declaration and initialization
-    printf("Value of a: %d\n", *ptr);
-    return 0;
-}
-</code></pre>
-            <ol>
-                <li>It stores the value of a, not its address.</li>
-                <li><strong>It holds the address of a and can be used to access or modify a's value.</strong></li>
-                <li>It points to a completely unrelated memory location.</li>
-                <li>It causes a segmentation fault when dereferenced.</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>14. A programmer wants to store a flag that can have one of three possible values (0, 1, or 2) in a structure. What feature of C structures can be used to optimize memory usage in this case?</h3>
-            <ol>
-                <li>Bitwise operations</li>
-                <li><strong>Bit fields</strong></li>
-                <li>Unions</li>
-                <li>Enumerations</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>15. What is the correct way to declare a pointer to a function that returns `int` and takes two `int` parameters?</h3>
-            <ol>
-                <li>int *func(int, int);</li>
-                <li><strong>int (*func)(int, int);</strong></li>
-                <li>int (*func(int, int));</li>
-                <li>(*int func)(int, int);</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>16. What is the output of this code?</h3>
-            <pre class="code-block"><code>#include &lt;stdio.h&gt;
-
-int main() {
-    int a = 10;
-    int *ptr = &amp;a;
-    printf("%d\n", *ptr);
-    return 0;
-}
-</code></pre>
-            <ol>
-                <li>Address of a</li>
-                <li><strong>10</strong></li>
-                <li>Compilation error</li>
-                <li>0</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>17. What will be the output of the following C code?</h3>
-            <pre class="code-block"><code>#include &lt;stdio.h&gt;
-#include &lt;string.h&gt;
-
-int main() {
-    char str[] = "Techie";
-    char *sub = str + 2;
-    printf("%s\n", sub);
-    return 0;
-}
-</code></pre>
-            <ol>
-                <li>Techie</li>
-                <li><strong>chie</strong></li>
-                <li>hie</li>
-                <li>Compilation error</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>18. What will happen if the file "myfile.txt" cannot be opened in write mode in the given program?</h3>
-            <pre class="code-block"><code>#include &lt;stdio.h&gt;
-
-int main() {
-    FILE *fptr;
-    fptr = fopen("myfile.txt", "w"); // open in write mode
-    if (fptr == NULL) {
-        printf("Error opening file!\n");
-        return 1;
-    }
-    // ... rest of the code
-    return 0;
-}
-</code></pre>
-            <ol>
-                <li>The program will skip writing and directly read from the file.</li>
-                <li>The program will crash without any message.</li>
-                <li><strong>The program will display "Error opening file!" and exit.</strong></li>
-                <li>The program will create a backup file and continue.</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>19. A programmer wants to represent a person's address as part of their overall details. What feature of C structures can be used to group the address details (street, city, state, zip) together within the person's structure?</h3>
-            <ol>
-                <li><strong>Nested structures</strong></li>
-                <li>Arrays of structures</li>
-                <li>Pointers to structures</li>
-                <li>Functions that return structures</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>20. What does the expression `found - str` do after `char *found = strchr(str, 'a');`?</h3>
-            <pre class="code-block"><code>#include &lt;stdio.h&gt;
-#include &lt;string.h&gt;
-
-int main() {
-    char str[] = "banana";
-    char *found = strchr(str, 'a');
-    if (found != NULL) {
-        printf("Index of 'a': %ld\n", found - str);
-    }
-    return 0;
-}
-</code></pre>
-            <ol>
-                <li>Adds an offset to the character pointer</li>
-                <li>Returns the memory address of 'a'</li>
-                <li><strong>Computes the index of 'a' in the string</strong></li>
-                <li>Returns a null pointer</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>21. How can you access structure members?</h3>
-            <ol>
-                <li>Using the comma (,) operator</li>
-                <li><strong>Using the dot (.) operator</strong></li>
-                <li>Using the star (*) operator</li>
-                <li>Using the at (@) operator</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>22. What will happen when the following code is executed?</h3>
-            <pre class="code-block"><code>#include &lt;stdio.h&gt;
-
-int main() {
-    FILE *fp;
-    fp = fopen("data.txt", "w"); // Open in write mode
-    if (fp == NULL) {
-        printf("Error opening file.\n");
-    } else {
-        fprintf(fp, "Hello World!\n");
-        fclose(fp);
-        printf("Data written to file successfully.\n");
-    }
-    return 0;
-}
-</code></pre>
-            <ol>
-                <li><strong>The program creates data.txt and writes "Hello World!"</strong></li>
-                <li>The program prints "Error opening file."</li>
-                <li>The program throws a compile-time error</li>
-                <li>The program opens the file in append mode and adds "Hello World!" at the end</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>23. What will happen if "myfile.txt" does not exist when the program tries to open it in read mode?</h3>
-            <pre class="code-block"><code>#include &lt;stdio.h&gt;
-
-int main() {
-    FILE *fptr;
-    fptr = fopen("myfile.txt", "r"); // open in read mode
-    if (fptr == NULL) {
-        printf("Error opening file!\n");
-        return 1;
-    }
-    // ... rest of the code
-    return 0;
-}
-</code></pre>
-            <ol>
-                <li>It creates a new empty file named "myfile.txt".</li>
-                <li>It reads from a temporary file instead.</li>
-                <li><strong>It returns NULL and prints an error message.</strong></li>
-                <li>It appends default text into the file.</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>24. A programmer wants to read data from a file in C. What is the first step in this process?</h3>
-            <ol>
-                <li>Reading data from the file using `fread()`</li>
-                <li>Closing the file using `fclose()`</li>
-                <li><strong>Opening the file using `fopen()`</strong></li>
-                <li>Writing data to the file using `fwrite()`</li>
-            </ol>
-        </div>
-
-        <div class="content-block">
-            <h3>25. Why is `fgets()` used for reading the student name instead of `scanf("%s", s.name)`?</h3>
-            <pre class="code-block"><code>#include &lt;stdio.h&gt;
-#include &lt;string.h&gt;
-
-struct Student {
-    int id;
-    char name[50];
-    float marks;
-};
-
-void readStudentFromFile() {
-    struct Student s;
-    FILE *fp = fopen("student.txt", "r");
-
-    if (fp == NULL) {
-        printf("Error opening file!\n");
-        return;
-    }
-
-    fscanf(fp, "%d\n", &amp;s.id);
-    fgets(s.name, sizeof(s.name), fp); // This is the line in question
-    fscanf(fp, "%f", &amp;s.marks);
-
-    if (s.name[strlen(s.name) - 1] == '\n') {
-        s.name[strlen(s.name) - 1] = '\0';
-    }
-
-    fclose(fp);
-
-    printf("Student Data from File:\n");
-    printf("ID: %d\n", s.id);
-    printf("Name: %s\n", s.name);
-    printf("Marks: %.2f\n", s.marks);
-}
-
-int main() {
-    // Assuming writeStudentToFile() is called before this to create student.txt
-    readStudentFromFile();
-    return 0;
-}
-</code></pre>
-            <ol>
-                <li>Because `scanf("%s")` reads newline characters</li>
-                <li>Because `fgets()` is faster than `scanf()`</li>
-                <li><strong>Because `fgets()` can read names with spaces</strong></li>
-                <li>Because `scanf()` automatically closes the file</li>
-            </ol>
-        </div>
+    <div id="monday-content-week10" class="day-content day-section">
+        <h2>Mindmash - Quiz 1 Coming Soon!</h2>
     </div>
 </div><!-- Mindmash content before this-->
 
@@ -4113,21 +1418,23 @@ int main() {
     </footer>
 
 <script>
-    // --- CONTROL KEYWORD HERE ---
-// Define a variable to store the ID of the disabled week
-// Set this to the week you want to disable (e.g., 'week4', 'week2', or null if no week is disabled)
-let disabledWeekId = null; // Changed from 'null' to null to ensure no week is disabled
+// --- CONTROL KEYWORD HERE ---
+// Define a constant array of all enabled weeks.
+// Any week not listed here will be treated as disabled.
+const enabledWeeks = [
+    'week1', 'week2', 'week3', 'week4', 'week5',
+    'week6', 'week7', 'week8', 'week9', 'week10', 'week11'
+];
 
-// Define an array of disabled days for a given week (e.g., ['tuesday', 'thursday'] for week1)
+// Define an array of disabled days for a given week.
 const disabledDays = {
-    // Uncomment these lines and specify days if you want to disable specific days within weeks
-    // 'week1': [], // Example: No disabled days for Week 1
-    // 'week2': [],
-    // 'week3': [],
-    // 'week4': [],
-    // 'week5': [],
-    // 'week6': [],
-    // 'week7': [], // Mindmash - no disabled days here for now
+   // 'week1': [],
+   // 'week2': [],
+   // 'week3': [],
+   // 'week4': [],
+   // 'week5': [],
+   // 'week6': [],
+   // 'week7': [],
 };
 // --- END CONTROL KEYWORD ---
 
@@ -4146,15 +1453,12 @@ function shuffleString(str) {
 
 // Function to jumble the text content of an element
 function jumbleText(element) {
-    // Check if element has any text content to jumble and is not just whitespace
     if (element && element.textContent && element.textContent.trim().length > 0) {
-        // Use a unique key for storage, preferring element ID or generating one
         const elementKey = element.id || 'jumble-' + Math.random().toString(36).substring(2, 9);
-        if (!element.id) { // Assign ID if it didn't exist for consistent lookup
+        if (!element.id) {
             element.id = elementKey;
         }
 
-        // Store original text if not already stored
         if (!originalTextStore[elementKey]) {
             originalTextStore[elementKey] = element.textContent;
         }
@@ -4166,99 +1470,105 @@ function jumbleText(element) {
 function unjumbleText(element) {
     if (element && element.id && originalTextStore[element.id]) {
         element.textContent = originalTextStore[element.id];
-        // Optionally delete from store if you don't need it after unjumbling
-        // delete originalTextStore[element.id];
     }
 }
 
 // Function to show content for a specific week
 function showWeek(weekId, clickedButton) {
-    // Hide all week content sections
+    const isWeekEnabled = enabledWeeks.includes(weekId);
+
     const weekContents = document.querySelectorAll('.week-content');
     weekContents.forEach(content => {
         content.classList.remove('active-content');
-        content.classList.remove('content-disabled-overlay'); // Ensure this is removed when not disabled
+        content.classList.remove('content-disabled-overlay');
     });
 
-    // Deactivate all main tab buttons
     const mainTabButtons = document.querySelectorAll('.main-tab-nav .tab-button');
     mainTabButtons.forEach(button => {
         button.classList.remove('active');
     });
 
-    // Show the selected week's content
     const selectedWeekContent = document.getElementById(weekId);
     selectedWeekContent.classList.add('active-content');
 
-    // Activate the clicked week button
     if (clickedButton) {
         clickedButton.classList.add('active');
     }
 
-    // Check if the current week is disabled (will always be false with disabledWeekId = null)
-    if (weekId === disabledWeekId) {
+    if (!isWeekEnabled) {
         selectedWeekContent.classList.add('content-disabled-overlay');
-        // Jumble text for questions and options within the entire disabled week
         selectedWeekContent.querySelectorAll('h3, p, h4, span, .quiz-option, li').forEach(element => {
             jumbleText(element);
         });
 
-        // Ensure day buttons for a disabled week do not have 'active' class
         selectedWeekContent.querySelectorAll('.nested-tab-nav .tab-button').forEach(button => {
             button.classList.remove('active');
         });
 
-        // Hide all day content within the disabled week, and also apply blur
         selectedWeekContent.querySelectorAll('.day-content').forEach(content => {
-            content.classList.remove('active-content'); // Hide any active day content
-            content.classList.add('content-disabled-overlay'); // Apply blur to all day contents
+            content.classList.remove('active-content');
+            content.classList.add('content-disabled-overlay');
             content.querySelectorAll('h4, p, span, li, .quiz-option').forEach(element => {
                 jumbleText(element);
             });
         });
 
-    } else { // Week is enabled
+    } else {
         selectedWeekContent.classList.remove('content-disabled-overlay');
-        // Unjumble text for questions and options within the entire enabled week
         selectedWeekContent.querySelectorAll('h3, p, h4, span, .quiz-option, li').forEach(element => {
             unjumbleText(element);
         });
 
-        // Re-add onclick handler for nested day buttons for enabled week
-        selectedWeekContent.querySelectorAll('.nested-tab-nav .tab-button').forEach(button => {
-            // Extract the dayId directly from the button's onclick attribute
-            const onclickAttribute = button.getAttribute('onclick');
-            const dayIdMatch = onclickAttribute.match(/showDay\('([^']+)'/); // Regex to get the first argument of showDay
-            if (dayIdMatch && dayIdMatch[1]) {
-                const originalDayId = dayIdMatch[1];
-                // Set the onclick attribute using the extracted ID, ensuring the weekId is also passed
-                button.setAttribute('onclick', `showDay('${originalDayId}', this, '${weekId}')`);
-            } else {
-                console.warn(`Could not extract dayId from onclick attribute for button:`, button);
+        const dayButtons = selectedWeekContent.querySelectorAll('.nested-tab-nav .tab-button');
+        let firstAvailableDayButton = null;
+
+        dayButtons.forEach(button => {
+            const dayNameMatch = button.getAttribute('onclick').match(/showDay\('([^']+)'/);
+            if (dayNameMatch) {
+                const dayName = dayNameMatch[1].split('-')[0];
+                if (!disabledDays[weekId] || !disabledDays[weekId].includes(dayName)) {
+                    if (!firstAvailableDayButton) {
+                        firstAvailableDayButton = button;
+                    }
+                }
+            }
+        });
+        
+        dayButtons.forEach(button => {
+            const dayNameMatch = button.getAttribute('onclick').match(/showDay\('([^']+)'/);
+            if (dayNameMatch) {
+                const dayName = dayNameMatch[1].split('-')[0];
+                if (disabledDays[weekId] && disabledDays[weekId].includes(dayName)) {
+                    button.classList.add('disabled');
+                    button.setAttribute('data-original-onclick', button.getAttribute('onclick'));
+                    button.removeAttribute('onclick');
+                } else {
+                    button.classList.remove('disabled');
+                    if (button.hasAttribute('data-original-onclick')) {
+                        button.setAttribute('onclick', button.getAttribute('data-original-onclick'));
+                        button.removeAttribute('data-original-onclick');
+                    }
+                }
             }
         });
 
-        // Determine the default day content to show for the *currently active* week
-        // Find the first nested tab button within the selected week and activate its content
-        const firstDayButton = selectedWeekContent.querySelector('.nested-tab-nav .tab-button');
-        if (firstDayButton) {
-            // Extract the dayId from the onclick of the first button
-            const onclickAttribute = firstDayButton.getAttribute('onclick');
+        if (firstAvailableDayButton) {
+            const onclickAttribute = firstAvailableDayButton.getAttribute('onclick');
             const dayIdMatch = onclickAttribute.match(/showDay\('([^']+)'/);
             if (dayIdMatch && dayIdMatch[1]) {
                 const defaultDayId = dayIdMatch[1];
-                showDay(defaultDayId, firstDayButton, weekId);
+                showDay(defaultDayId, firstAvailableDayButton, weekId);
             } else {
                 console.warn(`Could not determine default day ID for week ${weekId}.`);
             }
         } else {
-            // If there are no day buttons, ensure any currently visible day content is hidden.
+            console.warn(`All days for week ${weekId} are disabled. No day content will be shown.`);
             const dayContents = selectedWeekContent.querySelectorAll('.day-content');
             dayContents.forEach(content => {
                 content.classList.remove('active-content');
-                content.classList.remove('content-disabled-overlay');
+                content.classList.add('content-disabled-overlay');
                 content.querySelectorAll('h4, p, span, li, .quiz-option').forEach(element => {
-                    unjumbleText(element);
+                    jumbleText(element);
                 });
             });
         }
@@ -4269,222 +1579,192 @@ function showWeek(weekId, clickedButton) {
 function showDay(dayIdWithWeek, clickedButton, weekId) {
     const weekContentDiv = document.getElementById(weekId);
 
-    // Hide and un-blur/unjumble all day content sections within the current week first
     const dayContents = weekContentDiv.querySelectorAll('.day-content');
     dayContents.forEach(content => {
         content.classList.remove('active-content');
-        content.classList.remove('content-disabled-overlay'); // Always remove before potentially adding it back
+        content.classList.remove('content-disabled-overlay');
         content.querySelectorAll('h4, p, span, li, .quiz-option').forEach(element => {
-            unjumbleText(element); // Always unjumble previous content
+            unjumbleText(element);
         });
     });
 
-    // Deactivate all nested day tab buttons within the current week
     const dayTabButtons = weekContentDiv.querySelectorAll('.nested-tab-nav .tab-button');
     dayTabButtons.forEach(button => {
         button.classList.remove('active');
     });
 
-    // Extract just the day name from dayIdWithWeek (e.g., 'monday' from 'monday-content-week1')
     const dayName = dayIdWithWeek.split('-')[0];
 
     const targetDayContent = document.getElementById(dayIdWithWeek);
 
-    // Show the selected day's content
-    if (targetDayContent) { // Ensure target content exists before trying to show it
+    if (targetDayContent) {
         targetDayContent.classList.add('active-content');
     }
 
-    // Activate the clicked day button
     if (clickedButton) {
         clickedButton.classList.add('active');
     }
 
-    // Check if the specific day is disabled for this week OR if the entire week is disabled
-    if ((disabledDays[weekId] && disabledDays[weekId].includes(dayName)) || weekId === disabledWeekId) {
-        // Apply blur to the day's content if it's disabled or its parent week is disabled
+    const isWeekEnabled = enabledWeeks.includes(weekId);
+    if ((disabledDays[weekId] && disabledDays[weekId].includes(dayName)) || !isWeekEnabled) {
         if (targetDayContent) {
             targetDayContent.classList.add('content-disabled-overlay');
-            // Jumble the text contents within this specific disabled day
             targetDayContent.querySelectorAll('h4, p, span, li, .quiz-option').forEach(element => {
                 jumbleText(element);
             });
         }
-        // Also, ensure the clicked button (if it's a disabled day) becomes disabled style
         if (clickedButton) {
             clickedButton.classList.add('disabled');
-            // Temporarily remove its onclick to prevent re-activating jumbled content if clicked again
-            clickedButton.setAttribute('data-original-onclick', clickedButton.getAttribute('onclick'));
-            clickedButton.removeAttribute('onclick');
         }
     } else {
-        // Unjumble text if the day is enabled
         if (targetDayContent) {
             targetDayContent.querySelectorAll('h4, p, span, li, .quiz-option').forEach(element => {
                 unjumbleText(element);
             });
         }
-        // Re-enable the button if it was previously disabled
         if (clickedButton) {
             clickedButton.classList.remove('disabled');
-            // Restore original onclick if it was stored
-            if (clickedButton.hasAttribute('data-original-onclick')) {
-                clickedButton.setAttribute('onclick', clickedButton.getAttribute('data-original-onclick'));
-                clickedButton.removeAttribute('data-original-onclick');
-            }
         }
     }
 }
 
-// Function to apply initial setup (handles button disabling based on disabledWeeks/Days)
+// Function to apply initial setup (handles button disabling based on enabledWeeks)
 function applyInitialWeekSetup() {
-    // Disable week buttons if the entire week is marked as disabled
     document.querySelectorAll('.main-tab-nav .tab-button').forEach(button => {
         const weekIdMatch = button.getAttribute('onclick').match(/'(week\d+)'/);
-        if (weekIdMatch && weekIdMatch[1] === disabledWeekId) {
+        const weekId = weekIdMatch ? weekIdMatch[1] : null;
+
+        if (weekId && !enabledWeeks.includes(weekId)) {
             button.classList.add('disabled');
-            button.setAttribute('data-original-onclick', button.getAttribute('onclick')); // Store original
-            button.removeAttribute('onclick'); // Disable click
+            button.setAttribute('data-original-onclick', button.getAttribute('onclick'));
+            button.removeAttribute('onclick');
         } else {
             button.classList.remove('disabled');
-            // Restore onclick if it was previously disabled and now enabled
             if (button.hasAttribute('data-original-onclick')) {
                 button.setAttribute('onclick', button.getAttribute('data-original-onclick'));
                 button.removeAttribute('data-original-onclick');
             }
         }
     });
-
-    // Disable specific day buttons if they are in the disabledDays list
-    // This needs to be done dynamically when a week is shown, not at initial setup for all
-    // because day buttons only exist within an active week's DOM.
 }
-
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-    applyInitialWeekSetup(); // Apply initial setup for week buttons
+    applyInitialWeekSetup();
 
-    const hash = window.location.hash; // Get hash from URL
-    let weekToShow = 'week1'; // Default to Week 1
+    const hash = window.location.hash;
+    let weekToShow = 'week1';
 
     if (hash) {
         const weekIdFromHash = hash.substring(1);
         const weekButton = document.querySelector(`.main-tab-nav button[onclick*="${weekIdFromHash}"]`);
 
-        if (weekButton && !weekButton.classList.contains('disabled')) {
-            weekToShow = weekIdFromHash; // Use hash if valid and not disabled
-        } else if (weekButton && weekButton.classList.contains('disabled')) {
+        if (weekButton && enabledWeeks.includes(weekIdFromHash)) {
+            weekToShow = weekIdFromHash;
+        } else if (weekButton && !enabledWeeks.includes(weekIdFromHash)) {
             console.warn(`Attempted to link to disabled week: ${weekIdFromHash}. Showing Week 1 instead.`);
         } else {
             console.warn(`Invalid or non-existent week ID in hash: ${hash}. Showing Week 1 instead.`);
         }
     }
 
-    // Find the button for the determined weekToShow
     const targetWeekButton = document.querySelector(`.main-tab-nav .tab-button[onclick*="${weekToShow}"]`);
     if (targetWeekButton) {
         showWeek(weekToShow, targetWeekButton);
     } else {
-        // Fallback if somehow the defaultWeekButton is not found
         console.error("Default week button not found!");
     }
 
-
-    // --- Quiz Logic - Instant Feedback with Clickable Options ---
-    // Nested structure for answers: answers[weekId][dayName][questionId]
     const answers = {
         'week6': {
             'monday': {
-                'q1': 'c', // Monday Q1: getc() can be a macro, while fgetc() is always a function
-                'q2': 'a'  // Monday Q2: putc() is a macro, while fputc() is a function
+                'q1': 'c',
+                'q2': 'a'
             },
             'tuesday': {
-                'q1': 'b', // Tuesday Q1: malloc()
-                'q2': 'd'  // Tuesday Q2: It deallocates memory previously allocated...
+                'q1': 'b',
+                'q2': 'd'
             },
             'wednesday': {
-                'q1': 'd', // Wednesday Q1: struct
-                'q2': 'c'  // Wednesday Q2: Structures store all members in separate memory locations, while unions store all members in the same memory location.
+                'q1': 'd',
+                'q2': 'c'
             },
             'thursday': {
-                'q1': 'c', 
-                'q2': 'c'  
+                'q1': 'c',
+                'q2': 'c'
             },
-            'friday': { 
-                'q1': 'c', // Tuesday Q1: malloc()
+            'friday': {
+                'q1': 'c',
                 'q2': 'b'
             },
-            // 'saturday': { /* ... */ }
         },
         'week7': {
             'monday': {
-                'q1': 'a', 
+                'q1': 'a',
             },
             'tuesday': {
-                'q1': 'a', 
+                'q1': 'a',
             },
             'wednesday': {
-                'q1': 'c', 
+                'q1': 'c',
             },
             'thursday': {
-                'q1': 'b', 
+                'q1': 'b',
             },
-            'friday': { 
-                'q1': 'b', 
+            'friday': {
+                'q1': 'b',
             },
-            // 'saturday': { /* ... */ }
         },
         'week8': {
             'monday': {
-                'q1': 'c', 
+                'q1': 'c',
             },
             'tuesday': {
-                'q1': 'b', 
-                'q2': 'b', 
+                'q1': 'b',
+                'q2': 'b',
             },
             'wednesday': {
-                'q1': 'a', 
+                'q1': 'a',
             },
             'thursday': {
-                'q1': 'b', 
+                'q1': 'b',
             },
-            'friday': { 
-                'q1': 'd', 
+            'friday': {
+                'q1': 'd',
             },
-            'saturday': { 
-                'q1': 'b', 
+            'saturday': {
+                'q1': 'b',
             },
         },
         'week9': {
             'tuesday': {
-                'q1': 'b',  
+                'q1': 'b',
             },
-            'friday': { 
-                'q1': 'b', 
+            'friday': {
+                'q1': 'b',
             },
         },
         'week10': {
             'monday': {
                 'q1': 'b',
-                'q2': 'c', 
-                'q3': 'b', 
-                'q4': 'a', 
-                'q5': 'c',  
+                'q2': 'c',
+                'q3': 'b',
+                'q4': 'a',
+                'q5': 'c',
             },
             'wednesday': {
-                'q1': 'c', 
+                'q1': 'c',
             },
             'thursday': {
-                'q1': 'b', 
+                'q1': 'b',
             },
             'friday': {
-                'q1': 'd', 
+                'q1': 'd',
             },
         },
 
-        'week11': { // Added answers for Week 7 (Mindmash Quiz 1)
-            'quiz1': { // Changed 'monday' to 'quiz1' for Mindmash as per your button ID
+        'week11': {
+            'quiz1': {
                 'q1': 'b',
                 'q2': 'b',
                 'q3': 'a',
@@ -4494,74 +1774,59 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // checkAnswer function now takes weekId, dayName, questionName, selectedValue, AND the specific feedbackElement
     function checkAnswer(weekId, dayName, questionName, selectedValue, feedbackElement) {
-        feedbackElement.style.display = 'block'; // Show feedback area
-
-        // Clear previous feedback classes
+        feedbackElement.style.display = 'block';
         feedbackElement.classList.remove('correct', 'incorrect');
-
-        const correctAnswer = answers[weekId]?.[dayName]?.[questionName]; // Safely access nested answer
+        const correctAnswer = answers[weekId]?.[dayName]?.[questionName];
 
         if (selectedValue === correctAnswer) {
             feedbackElement.textContent = 'Correct!';
             feedbackElement.classList.add('correct');
         } else {
             let correctDisplay = correctAnswer;
-            // If the answer value is a single letter (a,b,c,d), format it as "option A"
             if (correctAnswer && ['a', 'b', 'c', 'd'].includes(correctAnswer.toLowerCase())) {
                 correctDisplay = `option ${correctAnswer.toUpperCase()}`;
             } else if (!correctAnswer) {
-                correctDisplay = " (Answer not found in script, please check)"; // Fallback for missing answers
+                correctDisplay = " (Answer not found in script, please check)";
             }
             feedbackElement.textContent = `Incorrect. The correct answer is ${correctDisplay}.`;
             feedbackElement.classList.add('incorrect');
         }
     }
 
-    // Get ALL 'quiz-option' divs on the page, regardless of the day
     const quizOptions = document.querySelectorAll('.quiz-container .quiz-option');
 
     quizOptions.forEach(optionDiv => {
         optionDiv.addEventListener('click', (event) => {
             const clickedOption = event.target;
-            const questionName = clickedOption.getAttribute('data-question'); // e.g., 'q1'
-            const selectedValue = clickedOption.getAttribute('data-value'); // e.g., 'c'
+            const questionName = clickedOption.getAttribute('data-question');
+            const selectedValue = clickedOption.getAttribute('data-value');
 
-            // Find the closest parent day-content div to get weekId and dayName
             const dayContentDiv = clickedOption.closest('.day-content');
             if (!dayContentDiv) {
                 console.error("Clicked quiz option is not within a .day-content div.");
                 return;
             }
-            const dayContentId = dayContentDiv.id; // e.g., 'monday-content-week6' or 'quiz1-content-week7'
+            const dayContentId = dayContentDiv.id;
             const parts = dayContentId.split('-');
-            // Assuming ID format is 'dayname-content-weekX' or 'quizname-content-weekX'
-            const dayName = parts[0]; // 'monday' or 'quiz1'
-            const weekId = parts[2]; // 'week6' or 'week7'
+            const dayName = parts[0];
+            const weekId = parts[2];
 
-            // Find the specific quiz-feedback element within the current question-block
             const feedbackElement = clickedOption.closest('.question-block').querySelector('.quiz-feedback');
             if (!feedbackElement) {
                 console.error("Quiz feedback element not found within the question block.");
                 return;
             }
 
-            // Deselect all other options for this specific question (within the same question-block)
             clickedOption.closest('.options').querySelectorAll('.quiz-option').forEach(opt => {
                 opt.classList.remove('selected');
             });
 
-            // Select the clicked option
             clickedOption.classList.add('selected');
 
-            // Provide feedback using the dynamically found elements and parsed IDs
             checkAnswer(weekId, dayName, questionName, selectedValue, feedbackElement);
         });
     });
-    // --- END Quiz Logic ---
-
-});
-</script>
+});</script>
 </body>
 </html>
